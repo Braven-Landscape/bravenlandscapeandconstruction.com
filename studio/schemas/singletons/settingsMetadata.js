@@ -1,0 +1,40 @@
+export default {
+  name: `settingsMetadata`,
+  title: `Settings - Metadata`,
+  type: `document`,
+  // __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
+  fields: [
+    {
+      name: `settingsMetadataTitle`,
+      title: `Metadata: Title`,
+      description: `Add the metadata title. Example: "Landscaping, Lawn Care, Construction Services - Plympton, MA | Braven Landscape & Construction" `,
+      type: `string`,
+      initialValue: `Landscaping, Lawn Care, Construction Services - Plympton, MA | Braven Landscape & Construction`,
+      // validation: (Rule) => Rule.required(),
+    },
+    {
+      name: `settingsMetadataDescription`,
+      title: `Metadata: Description`,
+      description: `Add the metadata description.`,
+      type: `text`,
+      initialValue: `We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!`,
+      // validation: (Rule) => Rule.required(),
+    },
+    {
+      name: `settingsMetadataAuthor`,
+      title: `Metadata: Author`,
+      description: `Add the metadata author. Example: "John Grattan" `,
+      type: `string`,
+      initialValue: `John Grattan`,
+      // validation: (Rule) => Rule.required(),
+    },
+    {
+      name: `settingsMetadataImage`,
+      title: `Metadata: Image`,
+      description: `Add the metadata image. Example: "src/assets/graphics/generic-logo-navbar-1000x199.png" `,
+      type: `string`,
+      initialValue: `src/assets/graphics/generic-logo-navbar-1000x199.png`,
+      // validation: (Rule) => Rule.required(),
+    },
+  ],
+};

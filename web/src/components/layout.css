@@ -1,0 +1,63 @@
+@tailwind base;
+
+main {
+  padding-top: 80px;
+}
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-blue-600;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.drop-shadow-text {
+  filter: drop-shadow(1px 1px 3px rgba(50, 50, 50, 0.3));
+}
+
+.drop-shadow-text-dark {
+  filter: drop-shadow(1px 1px 3px rgba(50, 50, 50, 0.5));
+}
+
+.drop-shadow-text-darker {
+  filter: drop-shadow(1px 1px 3px rgba(50, 50, 50, 0.9));
+}
+
+.drop-shadow {
+  filter: drop-shadow(3px 3px 5px rgba(85, 85, 85, 0.3));
+  & img {
+    filter: drop-shadow(3px 3px 5px rgba(85, 85, 85, 0.3));
+  }
+}
+
+.drop-shadow-dark {
+  filter: drop-shadow(3px 3px 5px rgba(85, 85, 85, 0.5));
+  & img {
+    filter: drop-shadow(3px 3px 5px rgba(85, 85, 85, 0.5));
+  }
+}
+
+.drop-shadow-darker {
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.9));
+  & img {
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.9));
+  }
+}
+
+.icon-fill > g {
+  fill: #4338ca;
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding-top: 120px;
+  }
+}

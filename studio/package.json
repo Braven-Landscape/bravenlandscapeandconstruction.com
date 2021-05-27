@@ -1,0 +1,44 @@
+{
+  "name": "bravenlandscape",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Henrique Almeida <bravenlandscapewebsite@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.10.5",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.10.5",
+    "@sanity/dashboard": "^2.10.5",
+    "@sanity/default-layout": "^2.10.5",
+    "@sanity/default-login": "^2.10.5",
+    "@sanity/desk-tool": "^2.10.5",
+    "@sanity/vision": "^2.10.5",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-icons": "^4.2.0",
+    "sanity-plugin-dashboard-widget-netlify": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^2.3.0"
+  }
+}
