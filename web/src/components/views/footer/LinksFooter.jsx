@@ -230,7 +230,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col1[1].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col1[1].label}
                   </Link>
@@ -239,7 +239,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col1[2].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col1[2].label}
                   </Link>
@@ -248,7 +248,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col1[3].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col1[3].label}
                   </Link>
@@ -257,7 +257,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col1[4].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col1[4].label}
                   </Link>
@@ -272,7 +272,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col2[1].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col2[1].label}
                   </Link>
@@ -281,7 +281,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col2[2].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col2[2].label}
                   </Link>
@@ -290,7 +290,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col2[3].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col2[3].label}
                   </Link>
@@ -299,7 +299,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col2[4].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col2[4].label}
                   </Link>
@@ -316,7 +316,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col3[1].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col3[1].label}
                   </Link>
@@ -325,7 +325,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col3[2].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col3[2].label}
                   </Link>
@@ -334,7 +334,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col3[3].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col3[3].label}
                   </Link>
@@ -343,7 +343,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col3[4].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col3[4].label}
                   </Link>
@@ -351,7 +351,7 @@ const LinkFooter = () => {
                 <li>
                   <Link
                     to={links.col3[5].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col3[5].label}
                   </Link>
@@ -366,7 +366,7 @@ const LinkFooter = () => {
                 <li>
                   <a
                     href={links.col4[1].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col4[1].label}
                   </a>
@@ -375,7 +375,7 @@ const LinkFooter = () => {
                   <a
                     href={links.col4[2].link}
                     rel="nofollow noreferrer noopener"
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col4[2].label}
                   </a>
@@ -385,7 +385,7 @@ const LinkFooter = () => {
                   <a
                     href={links.col4[3].link}
                     rel="nofollow noreferrer noopener"
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col4[3].label}
                   </a>
@@ -394,7 +394,7 @@ const LinkFooter = () => {
                 <li>
                   <a
                     href={links.col4[4].link}
-                    className={`text-base ${settings.linkColor} ${settings.linkColorHover}`}
+                    className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col4[4].label}
                   </a>

@@ -15,19 +15,29 @@ const settings = {
   textColorActive: 'text-primary-light',
   textColorActiveHover: 'hover:text-primary',
   textSize: 'text-lg',
+  textSizeMobile: 'text-xl',
   textWeight: 'font-medium',
   btnLink: '/contact/',
 };
 
-const navLinks = [
+const navLinksDesktop = [
   { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
   { name: 'Landscaping Services', to: '/landscaping-services/' },
   { name: 'Construction Services', to: '/construction-services/' },
 ];
 
+const navLinksMobile = [
+  { name: 'Home', to: '/' },
+  { name: 'About Us', to: '/about/' },
+  { name: 'Landscaping Services', to: '/landscaping-services/' },
+  { name: 'Construction Services', to: '/construction-services/' },
+  { name: 'Contact Us', to: '/contact/' },
+];
+
 const dryClasses = {
   navItem: `border-transparent ${settings.textColor} ${settings.textColorHover} inline-flex items-center px-1 pt-1 ${settings.textSize} ${settings.textWeight}`,
+  navItemMobile: `border-transparent ${settings.textColor} ${settings.textColorHover} inline-flex items-center px-1 pt-7 pb-5 ${settings.textSizeMobile} ${settings.textWeight}`,
   activeNavItem: `border-transparent ${settings.textColorActive} ${settings.textColorActiveHover} inline-flex items-center px-1 pt-1 ${settings.textSize} ${settings.textWeight}`,
 };
 
@@ -65,7 +75,7 @@ const NavbarMain = () => {
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-24">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+                {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -87,7 +97,7 @@ const NavbarMain = () => {
                 </div>
                 <div className="hidden sm:block sm:ml-6 lg:mx-auto self-center">
                   <div className="flex space-x-6">
-                    {navLinks.map((item) => (
+                    {navLinksDesktop.map((item) => (
                       <Link
                         key={item.name}
                         to={item.to}
@@ -111,16 +121,18 @@ const NavbarMain = () => {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="flex flex-col lg:flex-row px-2 pt-2 pb-3 space-y-1">
-              {navLinks.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.to}
-                  className={dryClasses.navItem}
-                  activeClassName={dryClasses.activeNavItem}
-                  // aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Link>
+              {navLinksMobile.map((item) => (
+                <div className="text-center">
+                  <Link
+                    key={item.name}
+                    to={item.to}
+                    className={dryClasses.navItemMobile}
+                    activeClassName={dryClasses.activeNavItem}
+                    // aria-current={item.current ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </Link>
+                </div>
               ))}
             </div>
           </Disclosure.Panel>
