@@ -70,7 +70,7 @@ const CompanyHome = () => {
     <motion.div
       ref={ref}
       variants={containerVariants}
-      initial={'hidden'}
+      initial="hidden"
       animate={controls}
       transition={{ duration: 0.5, delay: 0 }}
       className="relative bg-white py-16 sm:py-24"
@@ -108,44 +108,44 @@ const CompanyHome = () => {
             </h2>
             <div className="mt-10 text-gray-500 space-y-6">
               <p className="text-lg">
-                {company.name} is a gardening, landscaping, and construction
-                company located in {company.cityState}. Our landscaping
-                contractors service residential homes and commercial businesses,
-                focusing on outdoor living spaces, landscape design, lawn care,
-                and yard maintenance.
+                {company.name} is a gardening, landscaping, and hardscape
+                construction company located in {company.cityState}. Our
+                landscaping contractors service residential homes and commercial
+                businesses, focusing on outdoor living spaces, landscape design,
+                lawn care, and yard maintenance.
               </p>
-              <h3 className="text-gray-800 font-semibold">
+              <h3 className="text-2xl text-gray-800 font-semibold">
                 Licensed Professionals
               </h3>
-              <p className="text-base leading-7">
+              <p className="text-lg">
                 We employ a team of licensed professionals who take pride in
-                their work and the expertise they offer. They can help identify
+                their work and the expertise they offer. We can help identify
                 your needs then work to make sure you have a space that's
                 perfect for the way you live.
               </p>
-              <h3 className="text-gray-800 font-semibold">
+              <h3 className="text-2xl text-gray-800 font-semibold">
                 Environmentally Friendly
               </h3>
-              <p className="text-base leading-7">
+              <p className="text-lg">
                 We believe it's important to be environmentally friendly as we
                 design and build outdoor spaces. We use sustainable materials,
                 energy-efficient lighting, and water-saving irrigation systems
                 that are considered low-flow or even drought tolerant.
               </p>
-              <h3 className="text-gray-800 font-semibold">
+              <h3 className="text-2xl text-gray-800 font-semibold">
                 Quality Workmanship
               </h3>
-              <p className="text-base leading-7">
+              <p className="text-lg">
                 Quality workmanship has always been a cornerstone of our
                 landscaping business. We're committed to building a relationship
-                with each customer, and making sure they feel included every
-                step of the way as we build and design their dream space.
+                with each customer, and making sure you feel included in every
+                step of the way as we build and design your dream space.
               </p>
             </div>
             <div className="mt-20">
               <Link
                 to="/about/"
-                className="text-lg font-medium text-accent hover:text-primary"
+                className="text-2xl font-semibold text-accent hover:text-primary"
               >
                 {' '}
                 Learn more about {company.name}{' '}

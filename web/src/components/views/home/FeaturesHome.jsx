@@ -59,28 +59,28 @@ const FeaturesHome = () => {
 
   const features = [
     {
-      name: 'Gardening Services',
-      image: imgFeatureOne,
-      alt: 'Gardening services for front yard and backyard of residential homes and commercial businesses.',
-      description:
-        'Our gardening services will make your yard looks great and help it be more environmentally friendly. We know what plants and flowers to use, how many trees to plant, where they should be situated, and how to nurture them with fertilizers and compost. Turn your yard into a beautiful garden today.',
-      link: '/landscaping-services/',
-    },
-    {
-      name: 'Landscaping Services',
+      name: 'Landscaping, Lawn Care & Mowing Services',
       image: imgFeatureTwo,
       alt: 'Landscaping services for front yard and backyard of residential homes and commercial businesses.',
       description:
         'Our landscaping services will make your yard the envy of the neighborhood. We offer a variety of services including design, installation, and maintenance to ensure that your landscape is always picture perfect. Our designers will work with you to create an outdoor oasis that reflects your personal style and tastes.',
-      link: '/landscaping-services/',
+      link: '/services/',
     },
     {
-      name: 'Construction Services',
+      name: 'Mulching, Planting & Gardening Services',
+      image: imgFeatureOne,
+      alt: 'Gardening services for front yard and backyard of residential homes and commercial businesses.',
+      description:
+        'Our gardening services will make your yard looks great and help it be more environmentally friendly. We know what plants and flowers to use, how many trees to plant, where they should be situated, and how to nurture them with fertilizers and compost. Turn your yard into a beautiful garden today.',
+      link: '/services/',
+    },
+    {
+      name: 'Hardscaping, Patio & Construction Services',
       image: imgFeatureThree,
       alt: 'Construction services for front yard and backyard of residential homes and commercial businesses.',
       description:
         'Our construction services will turn your property into your own personal paradise. From designing the perfect outdoor living space to installing a cozy fire pit, we’ve got you covered. Porches, patios, and stone walkways are our specialty. Let us build the outdoor living space of your dreams!',
-      link: '/construction-services/',
+      link: '/services/',
     },
   ];
 
@@ -110,19 +110,19 @@ const FeaturesHome = () => {
     }
   }, [controls, inView]);
   return (
-    <motion.div
-      ref={ref}
-      variants={containerVariants}
-      initial={'hidden'}
-      animate={controls}
-      className="relative bg-green-50 py-16 sm:py-24 lg:py-32"
-    >
-      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h3 className="text-base font-semibold tracking-wider text-primary uppercase">
-          Gardening, Landscaping, Construction
+    <div className="relative bg-green-50 py-16 sm:py-24 lg:py-32">
+      <motion.div
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={controls}
+        className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
+      >
+        <h3 className="text-normal font-semibold tracking-wider text-primary uppercase">
+          Landscaping, Gardening, Hardscaping, Construction
         </h3>
-        <h2 className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-          Landscaping Services in Massachusetts
+        <h2 className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl sm:max-w-3xl mx-auto">
+          Landscaping & Hardscaping Services in Massachusetts
         </h2>
         <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
           We offer a variety of landscaping & construction services. Our
@@ -131,7 +131,7 @@ const FeaturesHome = () => {
           construction services for residential or commercial clients, including
           porches, patios, and walkways.
         </p>
-        <div className="mt-12">
+        <div className="mt-24">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="pt-6">
@@ -150,7 +150,7 @@ const FeaturesHome = () => {
                         />
                       </span>
                     </div>
-                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-2xl font-medium text-gray-900 tracking-tight">
                       {feature.name}
                     </h3>
                     <p className="my-5 text-base text-gray-500">
@@ -168,8 +168,8 @@ const FeaturesHome = () => {
             ))}
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

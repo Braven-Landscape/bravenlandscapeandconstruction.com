@@ -180,28 +180,28 @@ const AboutPage = () => {
               </div>
             </div>
             <div className="mt-8 lg:mt-0">
-              <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                <p className="text-lg text-gray-500">
-                  Sagittis scelerisque nulla cursus in enim consectetur quam.
-                  Dictum urna sed consectetur neque tristique pellentesque.
-                  Blandit amet, sed aenean erat arcu morbi.
-                </p>
-              </div>
-              <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="text-lg text-gray-500 max-w-prose mx-auto lg:max-w-none space-y-6">
+                <p>Hi, I'm Henrique, the owner of {company.name}.</p>
                 <p>
-                  Sollicitudin tristique eros erat odio sed vitae, consequat
-                  turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
-                  Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                  I've been working in the landscape and construction business
+                  since 2016 and decided it was time to launch my own company in
+                  2021.
                 </p>
                 <p>
-                  Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique
-                  sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum
-                  et et et sit. Faucibus sed non gravida lectus dignissim
-                  imperdiet a.
+                  We now have 2 trucks, multiple employees, and plans to expand
+                  our staff to meet the demands.
                 </p>
                 <p>
-                  Dictum magnis risus phasellus vitae quam morbi. Quis lorem
-                  lorem arcu, metus, egestas netus cursus. In.
+                  Our goal is to provide top-notch landscaping services
+                  throughout our community and maintain strong relationships
+                  with our happy clients.
+                </p>
+                <p>
+                  Since coming to {company.cityState} from Brazil with my
+                  family, I've always been very involved with my community. I
+                  enjoy playing the drums at my local church and now I take
+                  pride in helping residents clean up their property and turn it
+                  into a beautiful, outdoor living space.
                 </p>
               </div>
             </div>

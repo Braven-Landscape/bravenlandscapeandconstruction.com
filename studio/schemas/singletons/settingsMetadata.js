@@ -5,7 +5,7 @@ export default {
   // __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fields: [
     {
-      name: `settingsMetadataTitle`,
+      name: `title`,
       title: `Metadata: Title`,
       description: `Add the metadata title. Example: "Landscaping, Lawn Care, Construction Services - Plympton, MA | Braven Landscape & Construction" `,
       type: `string`,
@@ -13,7 +13,7 @@ export default {
       // validation: (Rule) => Rule.required(),
     },
     {
-      name: `settingsMetadataDescription`,
+      name: `description`,
       title: `Metadata: Description`,
       description: `Add the metadata description.`,
       type: `text`,
@@ -21,7 +21,7 @@ export default {
       // validation: (Rule) => Rule.required(),
     },
     {
-      name: `settingsMetadataAuthor`,
+      name: `author`,
       title: `Metadata: Author`,
       description: `Add the metadata author. Example: "John Grattan" `,
       type: `string`,
@@ -29,7 +29,7 @@ export default {
       // validation: (Rule) => Rule.required(),
     },
     {
-      name: `settingsMetadataImage`,
+      name: `image`,
       title: `Metadata: Image`,
       description: `Add the metadata image. Example: "src/assets/graphics/generic-logo-navbar-1000x199.png" `,
       type: `string`,

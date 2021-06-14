@@ -27,7 +27,7 @@ const Button = ({
           to={btnLink}
           className={`inline-flex items-center ${bgWidth} ${bgHeight} ${bgColor} ${bgColorHover} ${textSize} ${textWeight} ${textColor} ${textColorHover} border ${borderColor} ${borderColorHover} ${borderRadius} ${btnShadow} focus:outline-none focus:ring-2 focus:ring-offset-2 ${focusColor} hover:-translate-y-0.5 translate transform`}
         >
-          <span className="drop-shadow">{btnLabel}</span>
+          <span className="drop-shadow-text-dark">{btnLabel}</span>
         </Link>
       );
     case 'internal':
@@ -36,7 +36,7 @@ const Button = ({
           to={btnLink}
           className={`inline-flex items-center ${bgWidth} ${bgHeight} ${bgColor} ${bgColorHover} ${textSize} ${textWeight} ${textColor} ${textColorHover} border ${borderColor} ${borderColorHover} ${borderRadius} ${btnShadow} focus:outline-none focus:ring-2 focus:ring-offset-2 ${focusColor} hover:-translate-y-0.5 translate transform`}
         >
-          <span className="drop-shadow">{btnLabel}</span>
+          <span className="drop-shadow-text-dark">{btnLabel}</span>
         </Link>
       );
     case 'external':
@@ -45,7 +45,7 @@ const Button = ({
           href={btnLink}
           className={`inline-flex items-center ${bgWidth} ${bgHeight} ${bgColor} ${bgColorHover} ${textSize} ${textWeight} ${textColor} ${textColorHover} border ${borderColor} ${borderColorHover} ${borderRadius} ${btnShadow} focus:outline-none focus:ring-2 focus:ring-offset-2 ${focusColor} hover:-translate-y-0.5 translate transform`}
         >
-          <span className="drop-shadow">{btnLabel}</span>
+          <span className="drop-shadow-text-dark">{btnLabel}</span>
         </a>
       );
   }

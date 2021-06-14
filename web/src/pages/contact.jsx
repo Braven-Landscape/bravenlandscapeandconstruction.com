@@ -128,7 +128,7 @@ const ContactPage = () => {
       <HeaderPage
         imgHeroBg={imgHeroBg}
         headerText={`Contact ${company.name}`}
-        subheaderText="Let us do all the hard work"
+        subheaderText="Let's schedule a free estimate and plan your next project"
         buttonLabel="Schedule Appointment"
       />
       <div className="bg-gray-50 overflow-hidden">

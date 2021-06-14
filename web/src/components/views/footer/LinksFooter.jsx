@@ -83,20 +83,20 @@ const LinkFooter = () => {
         link: '/',
       },
       {
-        label: 'Landscaping',
-        link: '/landscaping-services/',
+        label: 'Lawn Care',
+        link: '/services/',
       },
       {
-        label: 'Design',
-        link: '/landscaping-services/',
+        label: 'Mulching',
+        link: '/services/',
       },
       {
-        label: 'Construction',
-        link: '/construction-services/',
+        label: 'Patios',
+        link: '/services/',
       },
       {
-        label: 'Gardening',
-        link: '/landscaping-services/',
+        label: 'Walkways',
+        link: '/services/',
       },
     ],
     col3: [

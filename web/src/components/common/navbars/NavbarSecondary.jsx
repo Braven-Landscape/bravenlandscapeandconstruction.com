@@ -5,7 +5,7 @@ const settings = {
   bg: 'bg-primary',
   textColor: 'text-white',
   textColorHover: 'hover:text-gray-200',
-  textSize: 'text-sm',
+  textSize: 'text-md',
   textWeight: 'font-thin',
 };
 

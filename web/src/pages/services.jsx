@@ -1,0 +1,341 @@
+/* This example requires Tailwind CSS v2.0+ */
+import React, { useEffect } from 'react';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+import Layout from '../components/layout';
+import SEO from '../components/common/Seo';
+import HeroPage from '../components/layouts/HeroPage';
+
+const ServicesPage = () => {
+  const data = useStaticQuery(graphql`
+    query ServicesPageQ {
+      site {
+        siteMetadata {
+          company
+          siteUrl
+          address
+          street
+          cityState
+          zip
+          emailDisplay
+          owner
+          phoneDisplay
+        }
+      }
+      sanitySettingsCompany {
+        address
+        cityState
+        email
+        emailHref
+        hours
+        name
+        owner
+        phone
+        phoneHref
+        street
+        website
+        zip
+      }
+      sanitySettingsSocials {
+        youTube
+        twitter
+        linkedIn
+        instagram
+        gmbShare
+        gmbEmbed
+        gmbCid
+        facebook
+      }
+      imgHeroBg: file(
+        relativePath: {
+          eq: "assets/images/landscaping-services/landscaping-services-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH, placeholder: BLURRED)
+        }
+      }
+      imgServiceOne: file(
+        relativePath: {
+          eq: "assets/images/services/landscaping-design-shrubs-pruning-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 300
+            layout: FIXED
+            placeholder: BLURRED
+          )
+        }
+      }
+      imgServiceTwo: file(
+        relativePath: {
+          eq: "assets/images/services/planting-gardening-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 300
+            layout: FIXED
+            placeholder: BLURRED
+          )
+        }
+      }
+      imgServiceThree: file(
+        relativePath: {
+          eq: "assets/images/services/mulching-loam-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 300
+            layout: FIXED
+            placeholder: BLURRED
+          )
+        }
+      }
+      imgServiceFour: file(
+        relativePath: {
+          eq: "assets/images/services/hardscape-patio-walkway-tools-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 300
+            layout: FIXED
+            placeholder: BLURRED
+          )
+        }
+      }
+      imgServiceFive: file(
+        relativePath: {
+          eq: "assets/images/services/fencing-fence-installation-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 300
+            layout: FIXED
+            placeholder: BLURRED
+          )
+        }
+      }
+      imgServiceSix: file(
+        relativePath: {
+          eq: "assets/images/services/spring-fall-yard-cleanup-braven-landscape-construction-plympton-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 300
+            layout: FIXED
+            placeholder: BLURRED
+          )
+        }
+      }
+    }
+  `);
+
+  const company = data.sanitySettingsCompany;
+  const socials = data.sanitySettingsSocials;
+  const imgHeroBg = data.imgHeroBg.childImageSharp.gatsbyImageData;
+  const imgServiceOne = data.imgServiceOne.childImageSharp.gatsbyImageData;
+  const imgServiceTwo = data.imgServiceTwo.childImageSharp.gatsbyImageData;
+  const imgServiceThree = data.imgServiceThree.childImageSharp.gatsbyImageData;
+  const imgServiceFour = data.imgServiceFour.childImageSharp.gatsbyImageData;
+  const imgServiceFive = data.imgServiceFive.childImageSharp.gatsbyImageData;
+  const imgServiceSix = data.imgServiceSix.childImageSharp.gatsbyImageData;
+
+  const features = [
+    {
+      name: 'Lawn Care & Maintenance',
+      image: imgServiceOne,
+      items: ['Lawn mowing', 'Weed whacking', 'Pruning shrubs & trees'],
+      link: '/',
+    },
+    {
+      name: 'Garden Care & Maintenance',
+      image: imgServiceTwo,
+      items: ['Planting', 'Weeding', 'Irrigation'],
+      link: '/',
+    },
+    {
+      name: 'Mulching & Loam',
+      image: imgServiceThree,
+      items: ['Delivery', 'Spreading', 'Edging'],
+      link: '/',
+    },
+    {
+      name: 'Hardscape Construction',
+      image: imgServiceFour,
+      items: ['Patios', 'Walkways', 'Retaining walls'],
+      link: '/',
+    },
+    {
+      name: 'Fencing Installation',
+      image: imgServiceFive,
+      items: ['Wood fencing', 'Vinyl fencing', 'Chain link fencing'],
+      link: '/',
+    },
+    {
+      name: 'Spring/Fall Cleanup',
+      image: imgServiceSix,
+      items: ['Raking', 'Blowing', 'Haul away'],
+      link: '/',
+    },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, delay: 0, staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
+  const seo = {
+    title: 'Landscaping, Lawn Care, Hardscaping Construction Services',
+    description:
+      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+    slug: '/landscaping-services/',
+  };
+
+  return (
+    <Layout>
+      <SEO title={seo.title} description={seo.description} canonical={seo.slug}>
+        <script type="application/ld+json">
+          {`{
+            '@context': 'https://schema.org',
+						'@type': 'Organization',
+						'@id': ${company.website}${seo.slug},
+            'address': {
+              '@type': 'PostalAddress',
+              'addressLocality': ${company.cityState},
+              'postalCode': ${company.zip},
+              'streetAddress': ${company.street}
+            },
+            'email': ${company.email},
+            'member': [
+              {
+                '@type': 'Organization'
+              },
+              {
+                '@type': 'Organization'
+              }
+            ],
+            'alumni': [
+              {
+                '@type': 'Person',
+                'name': ${company.owner}
+              },
+            ],
+            'name': ${company.name},
+            'telephone': ${company.phone}
+          }`}
+        </script>
+      </SEO>
+      <HeroPage
+        imgHeroBg={imgHeroBg}
+        headerText="Landscaping & Hardscaping Construction Services"
+        subheaderText="Check our landscaping & hardscaping construction services for residential homes & commercial businesses"
+      />
+      <div className="relative bg-green-50 py-16 sm:py-24 lg:py-32">
+        <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+          <h3 className="text-normal font-semibold tracking-wider text-primary uppercase">
+            Landscaping, Gardening, Hardscaping, Construction
+          </h3>
+          <h2 className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl sm:max-w-3xl mx-auto">
+            Landscaping & Hardscaping Services in Massachusetts
+          </h2>
+          <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+            We offer a variety of landscaping & construction services. Our
+            landscaping team is highly experienced and will work with you to
+            design a custom landscape that fits your needs. We also offer
+            construction services for residential or commercial clients,
+            including porches, patios, and walkways.
+          </p>
+          <motion.div
+            ref={ref}
+            variants={containerVariants}
+            initial="hidden"
+            animate={controls}
+            className="mt-20"
+          >
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {features.map((feature) => (
+                <div key={feature.name} className="py-10">
+                  <motion.div
+                    ref={ref}
+                    variants={itemVariants}
+                    className="flow-root bg-gray-50 rounded-lg shadow-lg px-6 pb-8"
+                  >
+                    <div className="-mt-6 space-y-6">
+                      <div>
+                        <span className="inline-flex items-center justify-center p-1 bg-primary rounded-md shadow-lg">
+                          <GatsbyImage
+                            image={feature.image}
+                            className="rounded-sm overflow-hidden max-h-48"
+                            alt={feature.alt}
+                          />
+                        </span>
+                      </div>
+                      <h3 className="text-2xl font-medium text-gray-900 tracking-tight">
+                        {feature.name}
+                      </h3>
+                      {/* <p className="text-base text-gray-500">
+                        {feature.description}
+                      </p> */}
+                      <ul className="px-3 list-none list-inside text-left text-lg text-gray-500">
+                        {feature.items.map((item) => (
+                          <li key={item}>
+                            <i className="fas fa-check mr-3 text-primary" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      {/* <Link
+                        to={feature.link}
+                        className="text-lg font-medium text-accent hover:text-primary"
+                      >
+                        Learn More <span aria-hidden="true">&rarr;</span>{' '}
+                      </Link> */}
+                    </div>
+                  </motion.div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default ServicesPage;

@@ -4,10 +4,14 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/common/Seo';
 import HeroHome from '../components/views/home/HeroHome';
+import BenefitsHome from '../components/views/home/BenefitsHome';
 import CompanyHome from '../components/views/home/CompanyHome';
 import FeaturesHome from '../components/views/home/FeaturesHome';
 import CtaHome from '../components/views/home/CtaHome';
 import ServiceOneHome from '../components/views/home/ServiceOneHome';
+import ServiceTwoHome from '../components/views/home/ServiceTwoHome';
+import CtaServiceOneHome from '../components/views/home/CtaServiceOneHome';
+import CtaServiceTwoHome from '../components/views/home/CtaServiceTwoHome';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,11 +40,41 @@ const IndexPage = () => {
         gmbCid
         facebook
       }
+      sanitySettingsColors {
+        primaryColor {
+          hex
+        }
+        primaryColorLight {
+          hex
+        }
+        primaryColorDark {
+          hex
+        }
+        secondaryColor {
+          hex
+        }
+        secondaryColorLight {
+          hex
+        }
+        secondaryColorDark {
+          hex
+        }
+        accentColor {
+          hex
+        }
+        accentColorLight {
+          hex
+        }
+        accentColorDark {
+          hex
+        }
+      }
     }
   `);
 
   const company = data.sanitySettingsCompany;
   const socials = data.sanitySettingsSocials;
+  const colors = data.sanitySettingsColors;
 
   const seo = {
     title: 'Landscaping, Lawn Care, Construction Services - Plympton, MA',
@@ -84,10 +118,14 @@ const IndexPage = () => {
         </script>
       </SEO>
       <HeroHome />
+      <BenefitsHome />
       <CompanyHome />
       <FeaturesHome />
       <CtaHome />
       <ServiceOneHome />
+      <CtaServiceOneHome />
+      <ServiceTwoHome />
+      {/* <CtaServiceTwoHome /> */}
     </Layout>
   );
 };

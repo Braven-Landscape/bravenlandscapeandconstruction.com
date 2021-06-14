@@ -58,26 +58,12 @@ const ServiceOneHome = () => {
     <motion.div
       ref={ref}
       variants={containerVariants}
-      initial={'hidden'}
+      initial="hidden"
       animate={controls}
-      className="bg-white overflow-hidden"
+      className="bg-white overflow-hidden py-24"
     >
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <motion.div
-          ref={ref}
-          variants={itemVariants}
-          className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none"
-        >
-          <div>
-            <h2 className="text-base text-gray-900 font-semibold tracking-wide uppercase">
-              Landscaping For Residential Homes & Commercial Business
-            </h2>
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-primary sm:text-4xl">
-              Landscaping Services
-            </h3>
-          </div>
-        </motion.div>
-        <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-12">
           <div className="relative lg:row-start-1 lg:col-start-2">
             <motion.div
               ref={ref}
@@ -98,76 +84,65 @@ const ServiceOneHome = () => {
           <motion.div
             ref={ref}
             variants={itemVariants}
-            className="mt-8 lg:mt-0"
+            className="mt-8 lg:mt-5"
           >
-            <div className="text-base max-w-prose mx-auto lg:max-w-none">
-              <p className="text-lg text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                quos temporibus animi ratione facilis. Optio sed provident
-                dignissimos consectetur maiores modi quo neque exercitationem,
-                eligendi id minima ea, amet aliquam?
+            <div className="text-lg text-gray-600 max-w-prose mx-auto lg:max-w-none space-y-6">
+              <motion.div ref={ref} variants={itemVariants}>
+                <h3 className="text-base text-gray-900 font-semibold tracking-wide uppercase">
+                  Landscaping For Residential Homes & Commercial Businesses
+                </h3>
+                <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-primary sm:text-5xl">
+                  Landscaping & Lawn Care Services
+                </h2>
+              </motion.div>
+              <p className="pt-4">
+                We provide landscaping, lawn care, and lawn mowing services to
+                residential homes and commercial properties throughout the
+                Massachusetts area.
               </p>
-            </div>
-            <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-              <p className="italic">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                tenetur praesentium omnis et fugiat fugit quidem quos ipsa
-                commodi eligendi explicabo animi quia, corporis esse maiores
-                atque recusandae necessitatibus mollitia?
+              <p>
+                Our team is well-trained, experienced, and knowledgeable in all
+                aspects of lawn care. We have the equipment necessary to get
+                your property looking its best.
               </p>
-              <ul>
+              <ul className="space-y-6">
                 <li>
-                  <strong>Service</strong>: Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Necessitatibus temporibus
-                  recusandae aperiam debitis, delectus ex molestiae quibusdam.
-                  Magnam, quasi aliquid nulla odio architecto doloribus
-                  voluptates, blanditiis, deserunt atque id commodi!
+                  <strong>Lawn Care & Mowing</strong>: Whether you want a
+                  monthly schedule or just a need one-time service, we can help
+                  make your lawn look its best. For quality landscape design,
+                  weed whacking, and maintenance, our team is here to help.
                 </li>
                 <li>
-                  <strong>Service</strong>: Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Necessitatibus temporibus
-                  recusandae aperiam debitis, delectus ex molestiae quibusdam.
-                  Magnam, quasi aliquid nulla odio architecto doloribus
-                  voluptates, blanditiis, deserunt atque id commodi!
+                  <strong>Tree & Shubbery Trimming</strong>: Trimming trees and
+                  pruning shrubs can make a big difference in the appearance of
+                  your yard. Let's design your shrubs give an overall elegant
+                  feel to your yard.
                 </li>
                 <li>
-                  <strong>Service</strong>: Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Necessitatibus temporibus
-                  recusandae aperiam debitis, delectus ex molestiae quibusdam.
-                  Magnam, quasi aliquid nulla odio architecto doloribus
-                  voluptates, blanditiis, deserunt atque id commodi!
+                  <strong>Mulching</strong>: Mulching is a crucial part of yard
+                  maintenance because it helps to reduce water loss from the
+                  soil surface, recycle nutrients for plants, and insulate the
+                  ground against extreme heat or cold. Let us help you suppress
+                  weed growth while giving your lawn that clean, finished look.
                 </li>
               </ul>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                illo tenetur ab facere excepturi. Placeat minima libero hic ipsa
-                ipsum, impedit dolorem repellat? Dolorem atque blanditiis natus
-                quibusdam? Architecto, quod?
+              <p className="italic pt-6">
+                You deserve a clean and healthy yard for you and your family to
+                enjoy! Let us help you maintain it with our affordable rates.
               </p>
-              <h3>
-                Give Us A Call:{' '}
+              <p className="text-2xl py-5">
+                Call today for more information:{' '}
                 <a href={company.phoneHref} className="no-underline">
                   <span className="text-yellow-500 hover:text-yellow-300 font-bold">
                     {company.phone}
                   </span>
                 </a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                exercitationem rem maxime dolorum ipsum cumque vel ut quisquam
-                maiores voluptate. Amet mollitia iste ad veritatis nobis
-                assumenda numquam temporibus eligendi?
-              </p>
-              <p className="text-lg">
-                <em>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </em>
               </p>
             </div>
             <div className="mt-10">
               <Button
                 type="internal"
-                btnLink="/landscaping-services/"
+                btnLink="/services/"
                 btnLabel="See Landscaping Services"
               />
             </div>

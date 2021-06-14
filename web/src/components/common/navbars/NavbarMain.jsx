@@ -23,15 +23,15 @@ const settings = {
 const navLinksDesktop = [
   { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
-  { name: 'Landscaping Services', to: '/landscaping-services/' },
-  { name: 'Construction Services', to: '/construction-services/' },
+  { name: 'Landscaping Services', to: '/services/' },
+  { name: 'Construction Services', to: '/services/' },
 ];
 
 const navLinksMobile = [
   { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
-  { name: 'Landscaping Services', to: '/landscaping-services/' },
-  { name: 'Construction Services', to: '/construction-services/' },
+  { name: 'Landscaping Services', to: '/services/' },
+  { name: 'Construction Services', to: '/services/' },
   { name: 'Contact Us', to: '/contact/' },
 ];
 
@@ -44,10 +44,8 @@ const dryClasses = {
 const NavbarMain = () => {
   const data = useStaticQuery(graphql`
     query NavbarMainQ {
-      site {
-        siteMetadata {
-          company
-        }
+      sanitySettingsCompany {
+        name
       }
       imgLogo: file(
         relativePath: {
@@ -66,8 +64,9 @@ const NavbarMain = () => {
     }
   `);
 
-  const metadata = data.site.siteMetadata;
+  const company = data.sanitySettingsCompany;
   const imgLogo = data.imgLogo.childImageSharp.gatsbyImageData;
+
   return (
     <Disclosure as="nav" className={settings.bg}>
       {({ open }) => (
@@ -90,7 +89,7 @@ const NavbarMain = () => {
                   <NavLogo>
                     <GatsbyImage
                       image={imgLogo}
-                      alt={`${metadata.company} company logo`}
+                      alt={`${company.name} company logo`}
                       loading="eager"
                     />
                   </NavLogo>

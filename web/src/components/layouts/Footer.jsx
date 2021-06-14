@@ -5,6 +5,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import MapFooter from '../views/footer/MapFooter';
 import LinksFooter from '../views/footer/LinksFooter';
 import TermsFooter from '../views/footer/TermsFooter';
+import FormFooter from '../common/forms/formFooter';
 
 const settings = {
   footerBgColor: 'bg-gray-800',
@@ -135,6 +136,7 @@ const Footer = () => {
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
+      <FormFooter />
       <MapFooter />
       <LinksFooter />
       <TermsFooter />

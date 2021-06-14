@@ -31,6 +31,9 @@ module.exports = {
   purge: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx'],
   theme: {
     colors: {
+      current: 'currentColor',
+      transparent: 'transparent',
+
       white: colors.white,
       gray: colors.gray,
       red: colors.red,

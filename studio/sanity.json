@@ -14,11 +14,21 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "@sanity/dashboard",
-    "dashboard-widget-netlify"
+    "dashboard-widget-netlify",
+    "seo-tools",
+    "content-calendar",
+    "netlify-deploy-status-badge",
+    "dark-theme-blue",
+    "dashboard-widget-notes",
+    "icon-picker",
+    "@sanity/color-input",
+    "order-documents"
   ],
   "env": {
     "development": {
-      "plugins": ["@sanity/vision"]
+      "plugins": [
+        "@sanity/vision"
+      ]
     }
   },
   "parts": [
@@ -28,11 +38,11 @@
     },
     {
       "name": "part:@sanity/desk-tool/structure",
-      "path": "./sanity-structure.js"
+      "path": "./parts/sanity-structure.js"
     },
     {
       "implements": "part:@sanity/dashboard/config",
-      "path": "./dashboardConfig.js"
+      "path": "./parts/dashboardConfig.js"
     }
   ]
 }
