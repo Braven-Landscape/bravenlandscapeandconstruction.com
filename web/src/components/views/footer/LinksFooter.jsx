@@ -176,7 +176,8 @@ const LinkFooter = () => {
           <div className="flex space-x-6 justify-center">
             <a
               href={socialLinks.facebook}
-              rel="nofollow noreferrer noopener"
+              rel="noreferrer noopener"
+              target="_blank"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">Facebook</span>
@@ -185,7 +186,8 @@ const LinkFooter = () => {
 
             <a
               href={socialLinks.instagram}
-              rel="nofollow noreferrer noopener"
+              rel="noreferrer noopener"
+              target="_blank"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">Instagram</span>
@@ -194,7 +196,8 @@ const LinkFooter = () => {
 
             <a
               href={socialLinks.twitter}
-              rel="nofollow noreferrer noopener"
+              rel="noreferrer noopener"
+              target="_blank"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">Twitter</span>
@@ -203,7 +206,8 @@ const LinkFooter = () => {
 
             <a
               href={socialLinks.youtube}
-              rel="nofollow noreferrer noopener"
+              rel="noreferrer noopener"
+              target="_blank"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">YouTube</span>
@@ -212,7 +216,8 @@ const LinkFooter = () => {
 
             <a
               href={socialLinks.linkedIn}
-              rel="nofollow noreferrer noopener"
+              rel="noreferrer noopener"
+              target="_blank"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">LinkedIn</span>
@@ -374,7 +379,8 @@ const LinkFooter = () => {
                 <li>
                   <a
                     href={links.col4[2].link}
-                    rel="nofollow noreferrer noopener"
+                    rel="noreferrer noopener"
+                    target="_blank"
                     className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col4[2].label}
@@ -384,7 +390,8 @@ const LinkFooter = () => {
                 <li>
                   <a
                     href={links.col4[3].link}
-                    rel="nofollow noreferrer noopener"
+                    rel="noreferrer noopener"
+                    target="_blank"
                     className={`text-base break-all ${settings.linkColor} ${settings.linkColorHover}`}
                   >
                     {links.col4[3].label}

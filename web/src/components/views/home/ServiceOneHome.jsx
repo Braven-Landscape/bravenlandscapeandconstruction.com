@@ -113,9 +113,9 @@ const ServiceOneHome = () => {
                   weed whacking, and maintenance, our team is here to help.
                 </li>
                 <li>
-                  <strong>Tree & Shubbery Trimming</strong>: Trimming trees and
+                  <strong>Tree & Shrubbery Trimming</strong>: Trimming trees and
                   pruning shrubs can make a big difference in the appearance of
-                  your yard. Let's design your shrubs give an overall elegant
+                  your yard. Let's design your shrubs to give an overall elegant
                   feel to your yard.
                 </li>
                 <li>

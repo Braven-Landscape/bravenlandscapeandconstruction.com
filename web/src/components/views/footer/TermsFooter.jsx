@@ -18,13 +18,13 @@ const TermsFooter = () => {
 
   return (
     <div
-      className={`border-t border-gray-200 ${settings.footerBgColor} py-8 mx-auto`}
+      className={`border-t border-gray-200 ${settings.footerBgColor} py-8 px-3 mx-auto`}
     >
       <p className="text-base text-gray-200 text-center">
         © {new Date().getFullYear()} {company.name}, All Rights Reserved
         {` `}
       </p>
-      <p className="text-sm text-gray-200 text-center">
+      <p className="text-sm text-gray-200 text-center mt-3 lg:mt-0">
         <Link to="/privacy/" className="text-accent hover:text-primary">
           Privacy Policy
         </Link>{' '}

@@ -188,8 +188,8 @@ const AboutPage = () => {
                   2021.
                 </p>
                 <p>
-                  We now have 2 trucks, multiple employees, and plans to expand
-                  our staff to meet the demands.
+                  We now have two trucks, multiple employees, and plans to
+                  expand our staff to meet the demands.
                 </p>
                 <p>
                   Our goal is to provide top-notch landscaping services
@@ -197,9 +197,9 @@ const AboutPage = () => {
                   with our happy clients.
                 </p>
                 <p>
-                  Since coming to {company.cityState} from Brazil with my
+                  Since coming to {company.cityState}, from Brazil with my
                   family, I've always been very involved with my community. I
-                  enjoy playing the drums at my local church and now I take
+                  enjoy playing the drums at my local church, and now I take
                   pride in helping residents clean up their property and turn it
                   into a beautiful, outdoor living space.
                 </p>

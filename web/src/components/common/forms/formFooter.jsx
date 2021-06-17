@@ -18,22 +18,13 @@ const FormFooter = () => {
     lastName: '',
     email: '',
     phone: '',
-    company: '',
     service: '',
     findUs: '',
     message: '',
   });
 
-  const {
-    firstName,
-    lastName,
-    email,
-    phone,
-    company,
-    service,
-    findUs,
-    message,
-  } = contact;
+  const { firstName, lastName, email, phone, service, findUs, message } =
+    contact;
 
   const handleChange = (e) =>
     setContact({ ...contact, [e.target.name]: e.target.value });
@@ -103,7 +94,7 @@ const FormFooter = () => {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="relative bg-primary p-10 lg:p-16 rounded-xl shadow-xl max-w-4xl mx-auto"
+        className="relative bg-primary p-10 lg:p-16 rounded-xl shadow-xl max-w-4xl mx-3 lg:mx-auto"
         id="form-footer"
       >
         <div className="space-y-6 mb-16">
@@ -116,158 +107,117 @@ const FormFooter = () => {
         </div>
         <input type="hidden" name="form-name" value="form-footer" />
 
-        <div className="grid grid-cols-1 grid-rows-8 gap-y-6 gap-x-4 sm:grid-cols-2 sm:grid-rows-4">
-          <div className="">
-            <div className="">
-              <input
-                name="firstName"
-                type="text"
-                value={firstName}
-                onChange={handleChange}
-                placeholder="First Name"
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
+        <div className="grid grid-cols-1 grid-rows-8 gap-y-6 gap-x-4 sm:grid-cols-2 sm:grid-rows-3">
+          <div>
+            <input
+              name="firstName"
+              type="text"
+              value={firstName}
+              onChange={handleChange}
+              placeholder="First Name"
+              required
+              className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+            />
           </div>
-          <div className="">
-            <div className="">
-              <input
-                name="lastName"
-                type="text"
-                value={lastName}
-                onChange={handleChange}
-                placeholder="Last Name"
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
+          <div>
+            <input
+              name="lastName"
+              type="text"
+              value={lastName}
+              onChange={handleChange}
+              placeholder="Last Name"
+              required
+              className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+            />
           </div>
-          <div className="">
-            <div className="">
-              <input
-                name="email"
-                type="email"
-                value={email}
-                onChange={handleChange}
-                placeholder="Email"
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
+          <div>
+            <input
+              name="email"
+              type="email"
+              value={email}
+              onChange={handleChange}
+              placeholder="Email"
+              required
+              className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+            />
           </div>
-          <div className="">
-            <div className="">
-              <input
-                name="phone"
-                type="tel"
-                value={phone}
-                onChange={handleChange}
-                placeholder="Phone Number"
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
+          <div>
+            <input
+              name="phone"
+              type="tel"
+              value={phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              required
+              className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+            />
           </div>
-          <div className="">
-            <div className="">
-              <input
-                name="company"
-                type="text"
-                value={company}
-                onChange={handleChange}
-                placeholder="Company"
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
+          <div>
+            <select
+              name="service"
+              as="select"
+              value={service}
+              onChange={handleChange}
+              required
+              className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+            >
+              <option value="" disabled hidden>
+                Service of Interest...
+              </option>
+              <option value="Landscaping: Lawn Care, Mowing, Mulching, etc.">
+                Landscaping: Lawn Care, Mowing, Mulching, etc.
+              </option>
+              <option value="Hardscaping: Patio" className="bg-gray-100">
+                Hardscaping: Patio
+              </option>
+              <option value="Hardscaping: Walkway">Hardscaping: Walkway</option>
+              <option value="Construction: Fences" className="bg-gray-100">
+                Construction: Fencing
+              </option>
+              <option value="Seasonal: Spring/Fall Clean Up">
+                Seasonal: Spring/Fall Clean Up
+              </option>
+            </select>
           </div>
-          <div className="">
-            <div className="">
-              <select
-                name="service"
-                as="select"
-                value={service}
-                onChange={handleChange}
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+          <div>
+            <select
+              name="findUs"
+              as="select"
+              value={findUs}
+              onChange={handleChange}
+              required
+              className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+            >
+              <option value="" disabled hidden>
+                How Did You Find Us?
+              </option>
+              <option value="Facebook" className="bg-gray-100">
+                Facebook
+              </option>
+              <option value="Family/Friend">Family/Friend</option>
+              <option value="Google/Bing" className="bg-gray-100">
+                Google/Bing
+              </option>
+              <option value="Referral">Referral</option>
+              <option
+                value="Website (Yellowpages, etc.)"
+                className="bg-gray-100"
               >
-                <option value="" disabled hidden>
-                  Service of Interest...
-                </option>
-                <option value="New Application Development">
-                  New Application Development
-                </option>
-                <option
-                  value="Legacy Application Transformation"
-                  className="bg-light"
-                >
-                  Legacy Application Transformation
-                </option>
-                <option value="Healthcare Software Solutions">
-                  Healthcare Software Solutions
-                </option>
-                <option
-                  value="Financial Application Solutions"
-                  className="bg-light"
-                >
-                  Financial Application Solutions
-                </option>
-                <option value="Website Design & Development">
-                  Website Design & Development
-                </option>
-                <option
-                  value="Mobile Apps - iOS and Android"
-                  className="bg-light"
-                >
-                  Mobile Apps - iOS and Android
-                </option>
-              </select>
-            </div>
+                Directory (Yellowpages, etc.)
+              </option>
+            </select>
           </div>
-          <div className="">
-            <div controlId="formFooterFindUs">
-              <select
-                name="findUs"
-                as="select"
-                value={findUs}
-                onChange={handleChange}
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              >
-                <option value="" disabled hidden>
-                  How Did You Find Us?
-                </option>
-                <option value="Facebook" className="bg-light">
-                  Facebook
-                </option>
-                <option value="Family/Friend">Family/Friend</option>
-                <option value="Google/Bing" className="bg-light">
-                  Google/Bing
-                </option>
-                <option value="Referral">Referral</option>
-                <option
-                  value="Website (Yellowpages, etc.)"
-                  className="bg-light"
-                >
-                  Directory (Yellowpages, etc.)
-                </option>
-              </select>
-            </div>
-          </div>
-          <div className="">
-            <div className="">
-              <textarea
-                name="message"
-                rows="1"
-                value={message}
-                onChange={handleChange}
-                placeholder="Message"
-                required
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
-          </div>
+        </div>
+        <div className="mt-6">
+          <textarea
+            name="message"
+            rows="3"
+            value={message}
+            onChange={handleChange}
+            placeholder="Message"
+            required
+            className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
+          />
         </div>
 
         <div className="text-gray-100 text-sm my-10">
@@ -275,8 +225,8 @@ const FormFooter = () => {
             <span className="text-red-500">*</span> All Fields Required
           </p>
           <p>
-            <span className="text-red-500">*</span> Your information will never
-            be shared with anyone else.
+            <span className="text-red-500">*</span> Your personal information
+            will never be shared with anyone else.
           </p>
         </div>
         <div className="text-center mt-16">

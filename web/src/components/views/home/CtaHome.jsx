@@ -51,7 +51,7 @@ const CtaHome = () => {
     <motion.div
       ref={ref}
       variants={variants}
-      initial={'hidden'}
+      initial="hidden"
       animate={controls}
       transition={{ duration: 0.5, delay: 0 }}
       className="relative bg-gray-800"
@@ -59,7 +59,7 @@ const CtaHome = () => {
       <motion.div
         ref={ref}
         variants={variants}
-        initial={'hidden'}
+        initial="hidden"
         animate={controls}
         transition={{ duration: 0.5, delay: 0.2 }}
         className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
@@ -74,20 +74,20 @@ const CtaHome = () => {
         <motion.div
           ref={ref}
           variants={variants}
-          initial={'hidden'}
+          initial="hidden"
           animate={controls}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="md:ml-auto md:w-1/2 md:pl-10"
         >
           <h3 className="text-base font-semibold uppercase tracking-wider text-gray-300">
-            High Quality Landscaping Services
+            High-Quality Landscaping Services
           </h3>
           <h2 className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
             Schedule Your Free Quote Today
           </h2>
           <p className="mt-3 text-lg text-gray-300">
             Scheduling your free estimate is easy! Just fill out the online form
-            below and we will contact you to schedule a time.
+            below, and we will contact you to schedule a time.
           </p>
           <p className="mt-3 text-lg text-gray-300">
             Can't wait? Call us at{' '}
@@ -95,6 +95,7 @@ const CtaHome = () => {
               href={company.phoneHref}
               target="_blank"
               className="text-yellow-500 hover:text-yellow-300 font-bold"
+              rel="noreferrer"
             >
               {company.phone}
             </a>
@@ -106,6 +107,7 @@ const CtaHome = () => {
               href={company.emailHref}
               target="_blank"
               className="text-yellow-500 hover:text-yellow-300 font-bold"
+              rel="noreferrer"
             >
               {company.email}
             </a>
@@ -118,12 +120,13 @@ const CtaHome = () => {
           </div>
           <p className="mt-14 text-sm text-green-100">
             * The free estimate is usually scheduled within one day of
-            completing, submitting and receiving your information. As a courtesy
-            to our clients we schedule these estimates as quickly as possible.
+            completing, submitting, and receiving your information. As a
+            courtesy to our clients, we prepare these estimates as quickly as
+            possible.
           </p>
           <p className="mt-3 text-sm text-green-100">
             * If you'd like to cancel or change your appointment, please give us
-            24 hours notice.
+            24 hours' notice.
           </p>
         </motion.div>
       </div>

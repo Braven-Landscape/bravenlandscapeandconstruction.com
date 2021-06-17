@@ -9,7 +9,7 @@ import Button from '../../common/Button';
 const heroSettings = {
   bgOverlay: 'bg-gray-500',
   bgImgAlt:
-    'Front yard of home with porch and garden, landscaping done by Braven Landscape & Construction in Plympton, MA',
+    'Front yard of home with walkway and patio, landscaping done by Braven Landscape & Construction in Plympton, MA',
 };
 
 const content = {

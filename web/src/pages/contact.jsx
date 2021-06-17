@@ -245,16 +245,16 @@ const ContactPage = () => {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-medium text-indigo-200">
+                <h3 className="text-2xl font-medium text-green-400">
                   Contact Information
                 </h3>
-                <p className="mt-6 text-base text-indigo-50 max-w-3xl">
+                <p className="mt-6 text-base text-green-50 max-w-3xl">
                   {company.name} is a team of landscaping and construction
                   professionals that are dedicated to providing high-quality
                   services to our clients in {company.cityState}. We always
                   strive for customer satisfaction.
                 </p>
-                <p className="mt-6 text-base font-bold italic text-indigo-50 max-w-3xl">
+                <p className="mt-6 text-base font-bold italic text-green-50 max-w-3xl">
                   Give us a call to schedule an appointment or fill out our
                   contact form for a consultation and we’ll be happy to help
                   you!
@@ -320,7 +320,7 @@ const ContactPage = () => {
                     <a
                       href={socials.facebook}
                       rel="nofollow noreferrer noopener"
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">Facebook</span>
                       <i className="fab fa-2x fa-facebook" />
@@ -330,7 +330,7 @@ const ContactPage = () => {
                     <a
                       href={socials.instagram}
                       rel="nofollow noreferrer noopener"
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">Instagram</span>
                       <i className="fab fa-2x fa-instagram" />
@@ -340,7 +340,7 @@ const ContactPage = () => {
                     <a
                       href={socials.twitter}
                       rel="nofollow noreferrer noopener"
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">Twitter</span>
                       <i className="fab fa-2x fa-twitter" />
@@ -350,7 +350,7 @@ const ContactPage = () => {
                     <a
                       href={socials.youTube}
                       rel="nofollow noreferrer noopener"
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">YouTube</span>
                       <i className="fab fa-2x fa-youtube" />
@@ -360,7 +360,7 @@ const ContactPage = () => {
                     <a
                       href={socials.linkedIn}
                       rel="nofollow noreferrer noopener"
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">LinkedIn</span>
                       <i className="fab fa-2x fa-linkedin" />

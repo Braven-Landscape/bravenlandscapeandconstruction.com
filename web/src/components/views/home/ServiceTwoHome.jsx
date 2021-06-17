@@ -105,33 +105,33 @@ const ServiceTwoHome = () => {
                 throughout the Massachusetts area.
               </p>
               <p>
-                Our team of hardscaping and construction professionals have the
-                knowledge, experience, equipment and creativity to satisfy any
+                Our team of hardscaping and construction professionals has the
+                knowledge, experience, equipment, and creativity to satisfy any
                 customer's needs for their property.
               </p>
               <ul className="space-y-6">
                 <li>
                   <strong>Patios</strong>: Every patio is designed to suit your
-                  needs. We take into account the size of your yard as well as
-                  any architectural features you want to highlight or hide. From
-                  patios with built-in fireplaces to just a private space for
-                  you and your family, we will build a beautiful outdoor space.
+                  needs. We consider the size of your yard and any architectural
+                  features you want to highlight or hide. We will build a
+                  beautiful outdoor space from patios with built-in fireplaces
+                  to just a private area for you and your family.
                 </li>
                 <li>
                   <strong>Walkways</strong>: We design walkways that are
                   carefully aligned with your house to give you an outdoor space
                   that feels connected. You can choose from materials such as
-                  brick, stone pavers, gravel and sand to create textures and
+                  brick, stone pavers, gravel, and sand to create textures and
                   levels in your landscape.
                 </li>
                 <li>
                   <strong>Fences</strong>: Add some privacy to your yard by
-                  installing a fence. Fences give your yard character, amplify
-                  the beauty of trees and gardens, provide security for you home
-                  and pets, hide unsightly features from view, and help prevent
-                  trespassing by others on your property. From classy picket
-                  style fencing to rustic wood, we have what you need to match
-                  your style.
+                  installing a fence. Fencing gives your yard character,
+                  amplifies the beauty of trees and gardens, provides security
+                  for your home and pets, hides unsightly features from view,
+                  and helps prevent trespassing by others on your property. From
+                  classy picket-style fencing to rustic wood, we have what you
+                  need to match your style.
                 </li>
               </ul>
               <p className="italic pt-6">

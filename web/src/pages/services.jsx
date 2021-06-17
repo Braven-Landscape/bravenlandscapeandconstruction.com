@@ -155,40 +155,46 @@ const ServicesPage = () => {
   const imgServiceFive = data.imgServiceFive.childImageSharp.gatsbyImageData;
   const imgServiceSix = data.imgServiceSix.childImageSharp.gatsbyImageData;
 
-  const features = [
+  const services = [
     {
       name: 'Lawn Care & Maintenance',
       image: imgServiceOne,
+      alt: 'Hedged bushes designed by a landscaping contractor.',
       items: ['Lawn mowing', 'Weed whacking', 'Pruning shrubs & trees'],
       link: '/',
     },
     {
       name: 'Garden Care & Maintenance',
       image: imgServiceTwo,
+      alt: 'A landscaping contractor preparing to plant several shrubs, trees, and flowers.',
       items: ['Planting', 'Weeding', 'Irrigation'],
       link: '/',
     },
     {
       name: 'Mulching & Loam',
       image: imgServiceThree,
+      alt: 'A landscaping contractor preparing to spread mulch around the frontyard.',
       items: ['Delivery', 'Spreading', 'Edging'],
       link: '/',
     },
     {
       name: 'Hardscape Construction',
       image: imgServiceFour,
+      alt: 'A stone walkway under construction by a hardscaping contractor.',
       items: ['Patios', 'Walkways', 'Retaining walls'],
       link: '/',
     },
     {
       name: 'Fencing Installation',
       image: imgServiceFive,
+      alt: 'Wood fencing installed by Braven Landscape & Construction around the yard of a home.',
       items: ['Wood fencing', 'Vinyl fencing', 'Chain link fencing'],
       link: '/',
     },
     {
       name: 'Spring/Fall Cleanup',
       image: imgServiceSix,
+      alt: 'A landscaping contractor blowing leaves during a fall clean up.',
       items: ['Raking', 'Blowing', 'Haul away'],
       link: '/',
     },
@@ -289,8 +295,8 @@ const ServicesPage = () => {
             className="mt-20"
           >
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {features.map((feature) => (
-                <div key={feature.name} className="py-10">
+              {services.map((service) => (
+                <div key={service.name} className="py-10">
                   <motion.div
                     ref={ref}
                     variants={itemVariants}
@@ -300,20 +306,20 @@ const ServicesPage = () => {
                       <div>
                         <span className="inline-flex items-center justify-center p-1 bg-primary rounded-md shadow-lg">
                           <GatsbyImage
-                            image={feature.image}
+                            image={service.image}
                             className="rounded-sm overflow-hidden max-h-48"
-                            alt={feature.alt}
+                            alt={service.alt}
                           />
                         </span>
                       </div>
                       <h3 className="text-2xl font-medium text-gray-900 tracking-tight">
-                        {feature.name}
+                        {service.name}
                       </h3>
                       {/* <p className="text-base text-gray-500">
-                        {feature.description}
+                        {service.description}
                       </p> */}
                       <ul className="px-3 list-none list-inside text-left text-lg text-gray-500">
-                        {feature.items.map((item) => (
+                        {service.items.map((item) => (
                           <li key={item}>
                             <i className="fas fa-check mr-3 text-primary" />
                             {item}
@@ -321,7 +327,7 @@ const ServicesPage = () => {
                         ))}
                       </ul>
                       {/* <Link
-                        to={feature.link}
+                        to={service.link}
                         className="text-lg font-medium text-accent hover:text-primary"
                       >
                         Learn More <span aria-hidden="true">&rarr;</span>{' '}

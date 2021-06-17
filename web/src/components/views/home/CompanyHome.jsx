@@ -88,7 +88,7 @@ const CompanyHome = () => {
                   image={imgCompany}
                   className="z-10 lg:h-full h-96 w-full object-cover object-center"
                   imgClassName="absolute inset-0 sm:h-full h-64 w-full object-cover object-center"
-                  alt="Braven Landscaping & Construction contractor laying down bricks and stone for a walkway to a backyard patio."
+                  alt="A Braven Landscaping & Construction contractor lays down bricks and stone for a walkway to a backyard patio."
                 />
               </div>
             </motion.div>
@@ -130,7 +130,7 @@ const CompanyHome = () => {
                 We believe it's important to be environmentally friendly as we
                 design and build outdoor spaces. We use sustainable materials,
                 energy-efficient lighting, and water-saving irrigation systems
-                that are considered low-flow or even drought tolerant.
+                considered low-flow or even drought tolerant.
               </p>
               <h3 className="text-2xl text-gray-800 font-semibold">
                 Quality Workmanship
@@ -138,8 +138,8 @@ const CompanyHome = () => {
               <p className="text-lg">
                 Quality workmanship has always been a cornerstone of our
                 landscaping business. We're committed to building a relationship
-                with each customer, and making sure you feel included in every
-                step of the way as we build and design your dream space.
+                with each customer and making sure you feel included every step
+                of the way as we develop and design your dream space.
               </p>
             </div>
             <div className="mt-20">

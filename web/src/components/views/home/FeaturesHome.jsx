@@ -63,7 +63,7 @@ const FeaturesHome = () => {
       image: imgFeatureTwo,
       alt: 'Landscaping services for front yard and backyard of residential homes and commercial businesses.',
       description:
-        'Our landscaping services will make your yard the envy of the neighborhood. We offer a variety of services including design, installation, and maintenance to ensure that your landscape is always picture perfect. Our designers will work with you to create an outdoor oasis that reflects your personal style and tastes.',
+        'Our landscaping services will make your yard the envy of the neighborhood. We offer various services, including design, installation, and maintenance, to ensure that your landscape is always picture perfect. Our designers will work with you to create an outdoor oasis that reflects your style and tastes.',
       link: '/services/',
     },
     {
@@ -79,7 +79,7 @@ const FeaturesHome = () => {
       image: imgFeatureThree,
       alt: 'Construction services for front yard and backyard of residential homes and commercial businesses.',
       description:
-        'Our construction services will turn your property into your own personal paradise. From designing the perfect outdoor living space to installing a cozy fire pit, we’ve got you covered. Porches, patios, and stone walkways are our specialty. Let us build the outdoor living space of your dreams!',
+        "Our construction services will turn your property into your personal paradise. We've got you covered, from designing the perfect outdoor living space to installing a cozy fire pit. Porches, patios, and stone walkways are our specialty. Let us build the outdoor living space of your dreams!",
       link: '/services/',
     },
   ];

@@ -36,9 +36,9 @@ const MapFooter = () => {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
-          ></iframe>
+          />
         </div>
-        <div className="space-y-8 lg:col-span-1 text-white">
+        <div className="space-y-8 lg:col-span-1 text-white mt-6 lg:mt-0">
           <h2 className="text-3xl font-bold text-accent">
             {company.name} Is Located In {company.cityState}
           </h2>
@@ -48,9 +48,9 @@ const MapFooter = () => {
             South Coast, and Cape Cod areas.
           </p>
           <p>
-            Looking for directions to our central office at {company.address}?
-            Use the Google Map or the directions provided from surrounding
-            towns.
+            Are you looking for directions to our central office at{' '}
+            {company.address}? Use the Google Map or the directions provided
+            from surrounding towns.
           </p>
           <div className="w-full p-2 mx-auto rounded-2xl">
             <Disclosure>

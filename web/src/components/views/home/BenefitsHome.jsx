@@ -14,11 +14,11 @@ const BenefitsHome = () => {
     {
       name: 'Fast & Efficient',
       description:
-        "We're experienced & skilled, landscaping professionals who get the job done right and on time.",
+        "We're experienced & skilled landscaping professionals who get the job done right and on time.",
     },
     {
       name: 'High-Quality Results',
-      description: `High quality and affordable landscaping services, uniquely tailor to your needs and desires.`,
+      description: `Receive high-quality and affordable landscaping services uniquely tailored to your needs and desires.`,
     },
     {
       name: 'Added Curb Appeal',
