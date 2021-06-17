@@ -61,20 +61,20 @@ const LinkFooter = () => {
         link: '/',
       },
       {
+        label: 'Home',
+        link: '/',
+      },
+      {
         label: 'About Us',
         link: '/about/',
       },
       {
-        label: 'Meet The Team',
-        link: '/about/',
+        label: 'Services',
+        link: '/services/',
       },
       {
         label: 'Find Us Online',
         link: '/find-us-online/',
-      },
-      {
-        label: 'Reviews',
-        link: '/',
       },
     ],
     col2: [
@@ -165,11 +165,13 @@ const LinkFooter = () => {
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div className="xl:grid xl:grid-cols-3 xl:gap-12">
         <div className="space-y-8 xl:col-span-1">
-          <GatsbyImage
-            image={imgLogo}
-            className="w-56 mx-auto"
-            alt={`${company.name} logo`}
-          />
+          <Link to="/">
+            <GatsbyImage
+              image={imgLogo}
+              className="w-56 mx-auto"
+              alt={`${company.name} logo`}
+            />
+          </Link>
           <p className="text-gray-50 text-base text-center italic">
             {text.logoSubText}
           </p>
@@ -178,7 +180,7 @@ const LinkFooter = () => {
               href={socialLinks.facebook}
               rel="noreferrer noopener"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500"
+              className="text-green-500 hover:text-primary"
             >
               <span className="sr-only">Facebook</span>
               <i className="fab fa-2x fa-facebook" />
@@ -188,7 +190,7 @@ const LinkFooter = () => {
               href={socialLinks.instagram}
               rel="noreferrer noopener"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500"
+              className="text-green-500 hover:text-primary"
             >
               <span className="sr-only">Instagram</span>
               <i className="fab fa-2x fa-instagram" />
@@ -198,7 +200,7 @@ const LinkFooter = () => {
               href={socialLinks.twitter}
               rel="noreferrer noopener"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500"
+              className="text-green-500 hover:text-primary"
             >
               <span className="sr-only">Twitter</span>
               <i className="fab fa-2x fa-twitter" />
@@ -208,7 +210,7 @@ const LinkFooter = () => {
               href={socialLinks.youtube}
               rel="noreferrer noopener"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500"
+              className="text-green-500 hover:text-primary"
             >
               <span className="sr-only">YouTube</span>
               <i className="fab fa-2x fa-youtube" />
@@ -218,7 +220,7 @@ const LinkFooter = () => {
               href={socialLinks.linkedIn}
               rel="noreferrer noopener"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500"
+              className="text-green-500 hover:text-primary"
             >
               <span className="sr-only">LinkedIn</span>
               <i className="fab fa-2x fa-linkedin" />

@@ -51,7 +51,7 @@ const ServicesPage = () => {
       }
       imgHeroBg: file(
         relativePath: {
-          eq: "assets/images/landscaping-services/landscaping-services-braven-landscape-construction-plympton-ma.jpg"
+          eq: "assets/images/services/landscaping-services-braven-landscape-construction-plympton-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -230,7 +230,7 @@ const ServicesPage = () => {
     title: 'Landscaping, Lawn Care, Hardscaping Construction Services',
     description:
       'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
-    slug: '/landscaping-services/',
+    slug: '/services/',
   };
 
   return (
