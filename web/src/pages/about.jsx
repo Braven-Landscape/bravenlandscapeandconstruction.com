@@ -168,10 +168,10 @@ const AboutPage = () => {
           >
             <div className="relative lg:row-start-1 lg:col-start-2">
               <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
-                <div className="aspect-w-12 aspect-h-7">
+                <div>
                   <GatsbyImage
                     image={imgCompany}
-                    className="rounded-2xl shadow-xl"
+                    className="rounded-2xl shadow-xl w-full h-96 sm:h-full"
                     imgClassName="rounded-2xl shadow-xl"
                     alt="Company"
                     loading="lazy"

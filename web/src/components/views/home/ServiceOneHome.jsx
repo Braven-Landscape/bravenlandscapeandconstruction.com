@@ -62,7 +62,7 @@ const ServiceOneHome = () => {
       animate={controls}
       className="bg-white overflow-hidden py-24"
     >
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-12">
           <div className="relative lg:row-start-1 lg:col-start-2">
             <motion.div
@@ -71,10 +71,11 @@ const ServiceOneHome = () => {
               className="relative text-base mx-auto max-w-prose lg:max-w-none rounded-lg shadow-lg overflow-hidden"
             >
               <figure>
-                <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                <div>
                   <GatsbyImage
                     image={imgBeforeAfter}
                     imgClassName="object-cover object-center"
+                    className="w-full h-96 sm:h-full"
                     alt="Landscaping contractor with a lawn mower preparing for lawn care services"
                   />
                 </div>

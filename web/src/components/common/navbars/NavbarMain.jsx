@@ -23,15 +23,13 @@ const settings = {
 const navLinksDesktop = [
   { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
-  { name: 'Landscaping Services', to: '/services/' },
-  { name: 'Construction Services', to: '/services/' },
+  { name: 'Landscaping & Construction Services', to: '/services/' },
 ];
 
 const navLinksMobile = [
   { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
-  { name: 'Landscaping Services', to: '/services/' },
-  { name: 'Construction Services', to: '/services/' },
+  { name: 'Services', to: '/services/' },
   { name: 'Contact Us', to: '/contact/' },
 ];
 
@@ -45,7 +43,27 @@ const NavbarMain = () => {
   const data = useStaticQuery(graphql`
     query NavbarMainQ {
       sanitySettingsCompany {
+        address
+        cityState
+        email
+        emailHref
+        hours
         name
+        owner
+        phone
+        phoneHref
+        street
+        zip
+      }
+      sanitySettingsSocials {
+        youTube
+        twitter
+        linkedIn
+        instagram
+        gmbShare
+        gmbEmbed
+        gmbCid
+        facebook
       }
       imgLogo: file(
         relativePath: {
@@ -65,6 +83,7 @@ const NavbarMain = () => {
   `);
 
   const company = data.sanitySettingsCompany;
+  const socials = data.sanitySettingsSocials;
   const imgLogo = data.imgLogo.childImageSharp.gatsbyImageData;
 
   return (
@@ -133,6 +152,62 @@ const NavbarMain = () => {
                   </Link>
                 </div>
               ))}
+              <div className="pt-4 pb-3 bg-primary">
+                <a
+                  href={company.phoneHref}
+                  className="flex items-center px-4 py-5"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <div className="flex-shrink-0">
+                    <i className="fas fa-2x fa-phone mr-3 text-yellow-500 hover:text-white" />
+                  </div>
+                  <div className="ml-3">
+                    <div className="text-base font-medium text-white">
+                      Call Us
+                    </div>
+                    <div className="text-sm font-medium text-accent">
+                      {company.phone}
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href={company.emailHref}
+                  className="flex items-center px-4 pb-5"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <div className="flex-shrink-0">
+                    <i className="fas fa-2x fa-envelope mr-3 text-yellow-500 hover:text-white" />
+                  </div>
+                  <div className="ml-3">
+                    <div className="text-base font-medium text-white">
+                      Email Us
+                    </div>
+                    <div className="text-sm font-medium text-accent">
+                      {company.email}
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href={socials.gmbCid}
+                  className="flex items-center px-4 pb-5"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <div className="flex-shrink-0">
+                    <i className="fas fa-2x fa-map-marker-alt mr-5 text-yellow-500 hover:text-white" />
+                  </div>
+                  <div className="ml-3">
+                    <div className="text-base font-medium text-white">
+                      Get Directions
+                    </div>
+                    <div className="text-sm font-medium text-accent">
+                      {company.address}
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </Disclosure.Panel>
         </>
