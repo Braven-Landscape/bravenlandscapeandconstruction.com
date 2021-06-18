@@ -62,7 +62,7 @@ const HeroPage = ({ imgHeroBg, altText, headerText, subheaderText }) => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-6 text-2xl mx-auto text-center text-white max-w-2xl drop-shadow-darker"
+          className="mt-10 text-xl sm:text-2xl lg:text-3xl font-semibold text-white max-w-3xl mx-auto drop-shadow-darker"
         >
           {subheaderText}
         </motion.p>
