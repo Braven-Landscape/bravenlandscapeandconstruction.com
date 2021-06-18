@@ -4,20 +4,18 @@ import React from 'react';
 const CallBtn = () => {
   const data = useStaticQuery(graphql`
     query CallBtnQ {
-      phoneNumber: site {
-        siteMetadata {
-          phoneDisplay
-          phoneHref
-        }
+      sanitySettingsCompany {
+        phoneHref
       }
     }
   `);
 
-  const phone = data.phoneNumber.siteMetadata;
+  const company = data.sanitySettingsCompany;
+
 
   return (
     <a
-      href={phone.phoneHref}
+      href={company.phoneHref}
       className="block lg:hidden fixed bottom-2 right-2 z-50 drop-shadow-dark fa-stack fa-2x"
     >
       <span className="outline"><i className="fas fa-circle fa-stack-2x text-primary" /></span>
