@@ -2,7 +2,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const companyURL = `https://bravenlandscapeandconstruction.com`;
+const companyURL = `https://bravenlandscapeconstruction.com`;
 
 const {
   NODE_ENV,
@@ -90,7 +90,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/graphics/braven-landscape-construction-plympton-ma-logo.png`, // This path is relative to the root of the site.
       },
     },
     {

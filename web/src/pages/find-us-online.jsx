@@ -65,9 +65,8 @@ const FindUsOnlinePage = () => {
   const imgHeroBg = data.imgHeroBg.childImageSharp.gatsbyImageData;
 
   const seo = {
-    title: 'Landscaping, Lawn Care, Construction Services',
-    description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+    title: 'Find Us Online - Landscaping & Construction - Plympton, MA',
+    description: `Here is a list of social media profiles, third party review sites, and blogs that you can find online for more information about ${company.name}`,
     slug: '/find-us-online/',
   };
 

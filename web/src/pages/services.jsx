@@ -227,9 +227,9 @@ const ServicesPage = () => {
   }, [controls, inView]);
 
   const seo = {
-    title: 'Landscaping, Lawn Care, Hardscaping Construction Services',
+    title: 'Landscaping, Lawn Care, Hardscape, Construction Services',
     description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+      'View all our landscaping, lawn care, hardscape, masonry, and construction services for residential homes and commercial businesses. Call for a free estimate.',
     slug: '/services/',
   };
 
@@ -269,7 +269,7 @@ const ServicesPage = () => {
       </SEO>
       <HeroPage
         imgHeroBg={imgHeroBg}
-        headerText="Landscaping & Hardscaping Construction Services"
+        headerText="Landscaping, Hardscape, Masonry & Construction Services"
         subheaderText="Check our landscaping & hardscaping construction services for residential homes & commercial businesses"
       />
       <div className="relative bg-green-50 py-16 sm:py-24 lg:py-32">

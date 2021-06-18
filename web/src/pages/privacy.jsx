@@ -50,9 +50,8 @@ const PrivacyPage = () => {
   const imgHeroBg = data.imgHeroBg.childImageSharp.gatsbyImageData;
 
   const seo = {
-    title: 'Landscaping, Lawn Care, Construction Services',
-    description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+    title: 'Our Privacy Policy - Landscaping in Plympton, MA',
+    description: `${company.name} strongly believes in your rights to privacy. We protect your data and prefer to be transparent about everything we collect.`,
     slug: '/privacy/',
   };
 

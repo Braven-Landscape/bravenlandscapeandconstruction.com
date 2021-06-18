@@ -66,9 +66,8 @@ const AccessibilityPage = () => {
   const imgHeroBg = data.imgHeroBg.childImageSharp.gatsbyImageData;
 
   const seo = {
-    title: 'Landscaping, Lawn Care, Construction Services',
-    description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+    title: 'Our Accessibility Policy - Landscaping in Plympton, MA',
+    description: `${company.name} strongly believes in providing accessibility to our website for everyone. We try our best to make sure everything is ADA compliant.`,
     slug: '/accessibility/',
   };
 

@@ -92,9 +92,8 @@ const AboutPage = () => {
   }, [controls, inView]);
 
   const seo = {
-    title: `Learn More About ${company.name}`,
-    description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+    title: `Learn About ${company.name} - Plympton, MA`,
+    description: `Looking for more info about ${company.name}? Check here to learn about our company and how we got started landscaping in Plympton, MA`,
     slug: '/about/',
   };
 

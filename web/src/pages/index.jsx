@@ -77,9 +77,9 @@ const IndexPage = () => {
   const colors = data.sanitySettingsColors;
 
   const seo = {
-    title: 'Landscaping, Lawn Care, Construction Services - Plympton, MA',
+    title: 'Landscaping, Hardscape, Construction Services - Plympton, MA',
     description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+      'Our team is committed to providing the highest quality landscaping, hardscape, and construction services around Plympton, MA. Call today for a free estimate!',
     slug: '/',
   };
 

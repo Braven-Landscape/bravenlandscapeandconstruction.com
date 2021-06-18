@@ -35,7 +35,7 @@ const navLinksMobile = [
 
 const dryClasses = {
   navItem: `border-transparent ${settings.textColor} ${settings.textColorHover} inline-flex items-center px-1 pt-1 ${settings.textSize} ${settings.textWeight}`,
-  navItemMobile: `border-transparent ${settings.textColor} ${settings.textColorHover} inline-flex items-center px-1 pt-7 pb-5 ${settings.textSizeMobile} ${settings.textWeight}`,
+  navItemMobile: `border-transparent ${settings.textColor} ${settings.textColorHover} inline-flex items-center px-1 pt-6 pb-3 ${settings.textSizeMobile} ${settings.textWeight}`,
   activeNavItem: `border-transparent ${settings.textColorActive} ${settings.textColorActiveHover} inline-flex items-center px-1 pt-1 ${settings.textSize} ${settings.textWeight}`,
 };
 
@@ -94,12 +94,12 @@ const NavbarMain = () => {
             <div className="relative flex items-center justify-between h-24">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-accent hover:text-accent hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XIcon className="block h-10 w-10" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="block h-10 w-10" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -139,20 +139,22 @@ const NavbarMain = () => {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="flex flex-col lg:flex-row px-2 pt-2 pb-3 space-y-1">
-              {navLinksMobile.map((item) => (
-                <div className="text-center">
-                  <Link
-                    key={item.name}
-                    to={item.to}
-                    className={dryClasses.navItemMobile}
-                    activeClassName={dryClasses.activeNavItem}
-                    // aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </Link>
-                </div>
-              ))}
-              <div className="pt-4 pb-3 bg-primary">
+              <div className="mb-6">
+                {navLinksMobile.map((item) => (
+                  <div className="text-center">
+                    <Link
+                      key={item.name}
+                      to={item.to}
+                      className={dryClasses.navItemMobile}
+                      activeClassName={dryClasses.activeNavItem}
+                      // aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Link>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-10 py-4 bg-primary">
                 <a
                   href={company.phoneHref}
                   className="flex items-center px-4 py-5"

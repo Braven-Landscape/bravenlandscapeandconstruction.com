@@ -108,14 +108,15 @@ const CompanyHome = () => {
             </h2>
             <div className="mt-10 text-gray-500 space-y-6">
               <p className="text-lg">
-                {company.name} is a gardening, landscaping, and hardscape
-                construction company located in {company.cityState}. Our
-                landscaping contractors service residential homes and commercial
-                businesses, focusing on outdoor living spaces, landscape design,
-                lawn care, and yard maintenance.
+                {company.name} is a landscaping, lawn care, gardening,
+                hardscape, masonry, and construction company located in{' '}
+                {company.cityState}. Our landscaping contractors service
+                residential homes and commercial businesses, focusing on outdoor
+                living spaces, landscape design, lawn care, and yard
+                maintenance.
               </p>
               <h3 className="text-2xl text-gray-800 font-semibold">
-                Licensed Professionals
+                Licensed & Insured Professionals
               </h3>
               <p className="text-lg">
                 We employ a team of licensed professionals who take pride in

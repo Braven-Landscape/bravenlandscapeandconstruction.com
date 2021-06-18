@@ -85,9 +85,9 @@ const ContactPage = () => {
   }, [controls, inView]);
 
   const seo = {
-    title: 'Landscaping, Lawn Care, Construction Services',
+    title: 'Call Us Today For A Free Landscaping Quote - Plympton, MA',
     description:
-      'We offer landscaping, lawn care, construction services in Plymouth County. Call today for a free estimate to achieve your vision for your home or business!',
+      'When it comes to landscaping, lawn care, hardscape, masonry & construction, we are your one-stop shop around Plympton, MA. Give us a call for a free quote!',
     slug: '/contact/',
   };
 

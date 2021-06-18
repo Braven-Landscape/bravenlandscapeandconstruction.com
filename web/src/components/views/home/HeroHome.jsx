@@ -13,8 +13,9 @@ const heroSettings = {
 };
 
 const content = {
-  headline: 'Landscaping, Lawn Care & Hardscape Construction in Plympton, MA',
-  subHeadline: 'is a team of professional landscapers & lawn care experts.',
+  headline: 'Landscaping, Hardscape, Masonry & Construction in Plympton, MA',
+  subHeadline:
+    'is a team of professional landscape designers & lawn care experts.',
 };
 
 const HeroHome = () => {

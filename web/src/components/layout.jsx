@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Navbar from './layouts/Navbar';
 import Footer from './layouts/Footer';
+import CallBtn from './common/CallBtn';
 import './layout.css';
 
 const Layout = ({ children }) => {
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
+      <CallBtn />
       <Footer />
     </>
   );

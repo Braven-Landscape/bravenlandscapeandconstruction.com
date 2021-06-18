@@ -75,11 +75,11 @@ const FeaturesHome = () => {
       link: '/services/',
     },
     {
-      name: 'Hardscaping, Patio & Construction Services',
+      name: 'Hardscape, Masonry & Fence Construction Services',
       image: imgFeatureThree,
       alt: 'Construction services for front yard and backyard of residential homes and commercial businesses.',
       description:
-        "Our construction services will turn your property into your personal paradise. We've got you covered, from designing the perfect outdoor living space to installing a cozy fire pit. Porches, patios, and stone walkways are our specialty. Let us build the outdoor living space of your dreams!",
+        "Our construction services will turn your property into your personal paradise. We've got you covered, from designing the perfect outdoor living space to installing a cozy fire pit. Porches, patios, stone walkways, and fencing are our specialty. Let us build the outdoor living space of your dreams!",
       link: '/services/',
     },
   ];
@@ -119,7 +119,7 @@ const FeaturesHome = () => {
         className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
       >
         <h3 className="text-normal font-semibold tracking-wider text-primary uppercase">
-          Landscaping, Gardening, Hardscaping, Construction
+          Landscaping, Hardscaping, Masonry, Construction
         </h3>
         <h2 className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl sm:max-w-3xl mx-auto">
           Landscaping & Hardscaping Services in Massachusetts
