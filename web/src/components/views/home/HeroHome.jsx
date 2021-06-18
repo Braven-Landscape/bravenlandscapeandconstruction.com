@@ -96,7 +96,7 @@ const HeroHome = () => {
           initial="hidden"
           animate={controls}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 text-3xl font-semibold text-white max-w-3xl mx-auto drop-shadow-darker"
+          className="mt-10 text-xl sm:text-2xl lg:text-3xl font-semibold text-white max-w-3xl mx-auto drop-shadow-darker"
         >
           {company.name} {content.subHeadline}
         </motion.p>

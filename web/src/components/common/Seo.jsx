@@ -57,9 +57,6 @@ const SEO = ({ lang, title, description, canonical, image, children }) => {
     >
       <link rel="canonical" href={`${company.website}${canonical}`} />
 
-      {/* REMOVE BEFORE GOING LIVE */}
-      <meta name="robots" content="noindex" />
-
       <meta name="description" content={metaDescription} />
 
       {/* Open Graph tags */}

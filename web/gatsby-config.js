@@ -116,7 +116,7 @@ module.exports = {
         env: {
           production: {
             // REMOVE BEFORE GOING LIVE
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+            policy: [{ userAgent: '*' }],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
