@@ -80,7 +80,7 @@ const IndexPage = () => {
     title: 'Landscaping, Hardscape, Construction Services - Plympton, MA',
     description:
       'Our team is committed to providing the highest quality landscaping, hardscape, and construction services around Plympton, MA. Call today for a free estimate!',
-    slug: '/',
+    slug: 'https://bravenlandscapeconstruction.com',
   };
 
   return (
