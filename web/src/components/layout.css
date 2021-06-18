@@ -56,6 +56,12 @@ a {
   fill: #4338ca;
 }
 
+.outline {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #EAB308;
+}
+
 @media (min-width: 1024px) {
   main {
     padding-top: 120px;
