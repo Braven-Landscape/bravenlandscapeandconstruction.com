@@ -68,7 +68,7 @@ const AccessibilityPage = () => {
   const seo = {
     title: 'Our Accessibility Policy - Landscaping in Plympton, MA',
     description: `${company.name} strongly believes in providing accessibility to our website for everyone. We try our best to make sure everything is ADA compliant.`,
-    slug: '/accessibility/',
+    canonical: 'https://bravenlandscapeconstruction.com/accessibility/',
   };
 
   return (

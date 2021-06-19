@@ -55,7 +55,7 @@ const SEO = ({ lang, title, description, canonical, image, children }) => {
       }}
       title={`${title} | ${company.name}`}
     >
-      <link rel="canonical" href={`${company.website}${canonical}`} />
+      <link rel="canonical" href={canonical} />
 
       <meta name="description" content={metaDescription} />
 

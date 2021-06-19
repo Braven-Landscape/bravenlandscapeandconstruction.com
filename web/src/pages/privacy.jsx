@@ -52,7 +52,7 @@ const PrivacyPage = () => {
   const seo = {
     title: 'Our Privacy Policy - Landscaping in Plympton, MA',
     description: `${company.name} strongly believes in your rights to privacy. We protect your data and prefer to be transparent about everything we collect.`,
-    slug: '/privacy/',
+    canonical: 'https://bravenlandscapeconstruction.com/privacy/',
   };
 
   return (

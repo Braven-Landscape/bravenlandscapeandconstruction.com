@@ -67,7 +67,7 @@ const PageMissingPage = () => {
   const seo = {
     title: 'Something Went Wrong! This Page is Missing - 404 Error',
     description: `This page appears to be missing! Try visiting our home or services page for more information about ${company.name}`,
-    slug: '/404/',
+    canonical: 'https://bravenlandscapeconstruction.com/404/',
   };
 
   return (

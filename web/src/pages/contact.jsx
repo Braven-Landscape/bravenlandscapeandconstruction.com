@@ -88,7 +88,7 @@ const ContactPage = () => {
     title: 'Call Us Today For A Free Landscaping Quote - Plympton, MA',
     description:
       'When it comes to landscaping, lawn care, hardscape, masonry & construction, we are your one-stop shop around Plympton, MA. Give us a call for a free quote!',
-    slug: '/contact/',
+    canonical: 'https://bravenlandscapeconstruction.com/contact/',
   };
 
   return (

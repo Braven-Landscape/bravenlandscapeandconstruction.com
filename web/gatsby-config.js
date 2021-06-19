@@ -115,7 +115,6 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            // REMOVE BEFORE GOING LIVE
             policy: [{ userAgent: '*' }],
           },
           'branch-deploy': {
