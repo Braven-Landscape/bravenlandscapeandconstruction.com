@@ -67,7 +67,7 @@ const FindUsOnlinePage = () => {
   const seo = {
     title: 'Find Us Online - Landscaping & Construction - Plympton, MA',
     description: `Here is a list of social media profiles, third party review sites, and blogs that you can find online for more information about ${company.name}`,
-    canonical: 'https://bravenlandscapeconstruction.com/find-us-online/',
+    slug: 'https://bravenlandscapeconstruction.com/find-us-online/',
   };
 
   return (

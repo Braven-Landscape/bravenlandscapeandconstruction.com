@@ -230,7 +230,7 @@ const ServicesPage = () => {
     title: 'Landscaping, Lawn Care, Hardscape, Construction Services',
     description:
       'View all our landscaping, lawn care, hardscape, masonry, and construction services for residential homes and commercial businesses. Call for a free estimate.',
-    canonical: 'https://bravenlandscapeconstruction.com/services/',
+    slug: 'https://bravenlandscapeconstruction.com/services/',
   };
 
   return (

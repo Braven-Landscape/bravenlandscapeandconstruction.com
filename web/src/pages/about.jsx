@@ -94,7 +94,7 @@ const AboutPage = () => {
   const seo = {
     title: `Learn About ${company.name} - Plympton, MA`,
     description: `Looking for more info about ${company.name}? Check here to learn about our company and how we got started landscaping in Plympton, MA`,
-    canonical: 'https://bravenlandscapeconstruction.com/about/',
+    slug: 'https://bravenlandscapeconstruction.com/about/',
   };
 
   return (
