@@ -269,7 +269,7 @@ const ContactPage = () => {
                         href={company.phoneHref}
                         target="_blank"
                         className="flex"
-                        rel="nofollow noreferrer noopener"
+                        rel="noreferrer noopener"
                       >
                         <i className="fas fa-2x fa-phone mr-3 text-yellow-500 hover:text-yellow-400" />
                         <span className="text-yellow-100 hover:text-yellow-600 text-lg">
@@ -287,7 +287,7 @@ const ContactPage = () => {
                         href={company.emailHref}
                         target="_blank"
                         className="flex"
-                        rel="nofollow noreferrer noopener"
+                        rel="noreferrer noopener"
                       >
                         <i className="fas fa-2x fa-envelope mr-3 text-yellow-500 hover:text-yellow-400" />
                         <span className="text-yellow-100 hover:text-yellow-600 text-lg">
@@ -305,7 +305,7 @@ const ContactPage = () => {
                         href={socials.gmbCid}
                         target="_blank"
                         className="flex"
-                        rel="nofollow noreferrer noopener"
+                        rel="noreferrer noopener"
                       >
                         <i className="fas fa-2x fa-map-marker-alt ml-1 mr-2 text-yellow-500 hover:text-yellow-400" />
                         <span className="text-yellow-100 hover:text-yellow-600 text-lg ml-2">
@@ -319,7 +319,7 @@ const ContactPage = () => {
                   <li>
                     <a
                       href={socials.facebook}
-                      rel="nofollow noreferrer noopener"
+                      rel="noreferrer noopener"
                       className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">Facebook</span>
@@ -329,7 +329,7 @@ const ContactPage = () => {
                   <li>
                     <a
                       href={socials.instagram}
-                      rel="nofollow noreferrer noopener"
+                      rel="noreferrer noopener"
                       className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">Instagram</span>
@@ -339,7 +339,7 @@ const ContactPage = () => {
                   <li>
                     <a
                       href={socials.twitter}
-                      rel="nofollow noreferrer noopener"
+                      rel="noreferrer noopener"
                       className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">Twitter</span>
@@ -349,7 +349,7 @@ const ContactPage = () => {
                   <li>
                     <a
                       href={socials.youTube}
-                      rel="nofollow noreferrer noopener"
+                      rel="noreferrer noopener"
                       className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">YouTube</span>
@@ -359,7 +359,7 @@ const ContactPage = () => {
                   <li>
                     <a
                       href={socials.linkedIn}
-                      rel="nofollow noreferrer noopener"
+                      rel="noreferrer noopener"
                       className="text-green-500 hover:text-primary"
                     >
                       <span className="sr-only">LinkedIn</span>
