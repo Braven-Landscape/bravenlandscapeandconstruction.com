@@ -130,7 +130,11 @@ const NavbarMain = () => {
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   <div className="hidden sm:flex sm:items-center">
-                    <Button type="internal" btnLink={settings.btnLink} />
+                    <Button
+                      type="internal"
+                      btnLink={settings.btnLink}
+                      idName="ctaNavBtn"
+                    />
                   </div>
                 </div>
               </div>
@@ -160,6 +164,7 @@ const NavbarMain = () => {
                   className="flex items-center px-4 py-5"
                   rel="noreferrer noopener"
                   target="_blank"
+                  id="ctaMobileNavPhone"
                 >
                   <div className="flex-shrink-0">
                     <i className="fas fa-2x fa-phone mr-3 text-yellow-500 hover:text-white" />
@@ -178,6 +183,7 @@ const NavbarMain = () => {
                   className="flex items-center px-4 pb-5"
                   rel="noreferrer noopener"
                   target="_blank"
+                  id="ctaMobileNavEmail"
                 >
                   <div className="flex-shrink-0">
                     <i className="fas fa-2x fa-envelope mr-3 text-yellow-500 hover:text-white" />
@@ -196,6 +202,7 @@ const NavbarMain = () => {
                   className="flex items-center px-4 pb-5"
                   rel="noreferrer noopener"
                   target="_blank"
+                  id="ctaMobileNavMap"
                 >
                   <div className="flex-shrink-0">
                     <i className="fas fa-2x fa-map-marker-alt mr-5 text-yellow-500 hover:text-white" />

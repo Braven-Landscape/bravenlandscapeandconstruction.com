@@ -12,13 +12,15 @@ const CallBtn = () => {
 
   const company = data.sanitySettingsCompany;
 
-
   return (
     <a
       href={company.phoneHref}
+      id="ctaMobileCallBtn"
       className="block lg:hidden fixed bottom-2 right-2 z-50 drop-shadow-dark fa-stack fa-2x"
     >
-      <span className="outline"><i className="fas fa-circle fa-stack-2x text-primary" /></span>
+      <span className="outline">
+        <i className="fas fa-circle fa-stack-2x text-primary" />
+      </span>
       <i className="fas fa-phone fa-stack-1x text-accent fa-inverse" />
     </a>
   );

@@ -112,7 +112,7 @@ const HeroHome = () => {
           className="flex mt-10"
         >
           <div className="col-1 gap-4 mx-auto">
-            <Button type="internal" />
+            <Button type="internal" idName="ctaHeroHomeBtn" />
           </div>
         </motion.div>
       </div>

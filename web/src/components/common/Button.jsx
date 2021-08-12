@@ -19,12 +19,14 @@ const Button = ({
   borderRadius,
   btnShadow,
   focusColor,
+  idName,
 }) => {
   switch (type) {
     default:
       return (
         <Link
           to={btnLink}
+          id={idName}
           className={`inline-flex items-center ${bgWidth} ${bgHeight} ${bgColor} ${bgColorHover} ${textSize} ${textWeight} ${textColor} ${textColorHover} border ${borderColor} ${borderColorHover} ${borderRadius} ${btnShadow} focus:outline-none focus:ring-2 focus:ring-offset-2 ${focusColor} hover:-translate-y-0.5 translate transform`}
         >
           <span className="drop-shadow-text-dark">{btnLabel}</span>
@@ -34,6 +36,7 @@ const Button = ({
       return (
         <Link
           to={btnLink}
+          id={idName}
           className={`inline-flex items-center ${bgWidth} ${bgHeight} ${bgColor} ${bgColorHover} ${textSize} ${textWeight} ${textColor} ${textColorHover} border ${borderColor} ${borderColorHover} ${borderRadius} ${btnShadow} focus:outline-none focus:ring-2 focus:ring-offset-2 ${focusColor} hover:-translate-y-0.5 translate transform`}
         >
           <span className="drop-shadow-text-dark">{btnLabel}</span>
@@ -43,6 +46,7 @@ const Button = ({
       return (
         <a
           href={btnLink}
+          id={idName}
           className={`inline-flex items-center ${bgWidth} ${bgHeight} ${bgColor} ${bgColorHover} ${textSize} ${textWeight} ${textColor} ${textColorHover} border ${borderColor} ${borderColorHover} ${borderRadius} ${btnShadow} focus:outline-none focus:ring-2 focus:ring-offset-2 ${focusColor} hover:-translate-y-0.5 translate transform`}
         >
           <span className="drop-shadow-text-dark">{btnLabel}</span>

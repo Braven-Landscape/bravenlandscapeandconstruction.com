@@ -50,6 +50,7 @@ const NavbarSecondary = () => {
               href={company.emailHref}
               target="_blank"
               rel="noreferrer noopener"
+              id="ctaDesktopNavEmail"
             >
               <i className="fas fa-envelope mr-3 text-accent hover:text-accent-dark" />
               <span
@@ -60,7 +61,12 @@ const NavbarSecondary = () => {
             </a>
           </div>
           <div className="flex my-auto">
-            <a href={socials.gmbCid} target="_blank" rel="noreferrer noopener">
+            <a
+              href={socials.gmbCid}
+              target="_blank"
+              rel="noreferrer noopener"
+              id="ctaDesktopNavMap"
+            >
               <i className="fas fa-map-marker-alt mr-3 text-accent hover:text-accent-dark" />
               <span
                 className={`${settings.textColor} ${settings.textColorHover} ${settings.textSize} ${settings.textWeight}`}
@@ -75,6 +81,7 @@ const NavbarSecondary = () => {
               href={company.phoneHref}
               target="_blank"
               rel="noreferrer noopener"
+              id="ctaDesktopNavPhone"
             >
               <i className="fas fa-phone mr-3 text-accent hover:text-accent-darker" />
               <span

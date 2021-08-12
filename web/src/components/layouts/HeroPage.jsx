@@ -82,7 +82,12 @@ const HeroPage = ({
           className="flex mt-10"
         >
           <div className="col-1 gap-4 mx-auto">
-            <Button type="internal" btnLabel={btnLabel} btnLink={btnLink} />
+            <Button
+              type="internal"
+              btnLabel={btnLabel}
+              btnLink={btnLink}
+              idName="ctaHeroPageBtn"
+            />
           </div>
         </motion.div>
       </motion.div>
