@@ -13,7 +13,7 @@ const heroSettings = {
 };
 
 const content = {
-  headline: 'Landscaping, Hardscape, Masonry & Construction in Plympton, MA',
+  headline: 'Landscaping, Hardscape, Masonry & Construction in Massachusetts',
   subHeadline:
     'is a team of professional landscape designers & lawn care experts.',
 };
