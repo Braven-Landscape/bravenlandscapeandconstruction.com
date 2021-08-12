@@ -55,7 +55,12 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-force-trailing-slashes`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/thank-you/`],
+      },
+    },
     {
       resolve: `gatsby-source-sanity`,
       options: {

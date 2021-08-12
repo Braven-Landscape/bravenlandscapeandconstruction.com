@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
+import Helmet from 'react-helmet';
 
 import Layout from '../components/layout';
 import SEO from '../components/common/Seo';
@@ -67,7 +68,7 @@ const ThankYouPage = () => {
   const seo = {
     title: 'Thank You! We Will Contact You Shortly!',
     description: `Thank you for reach out to ${company.name}! We will be contacting you shortly.`,
-    slug: 'https://bravenlandscapeconstruction.com/404/',
+    slug: 'https://bravenlandscapeconstruction.com/thank-you/',
   };
 
   return (
@@ -104,6 +105,9 @@ const ThankYouPage = () => {
           }`}
         </script>
       </SEO>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <HeaderPage
         imgHeroBg={imgHeroBg}
         headerText="Thank You!"
