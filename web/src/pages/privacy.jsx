@@ -91,6 +91,7 @@ const PrivacyPage = () => {
       </SEO>
       <HeaderPage
         imgHeroBg={imgHeroBg}
+        altText="Lawn mowing and lawn care from one of our professional landscapers"
         headerText="Our Privacy Policy"
         subheaderText="Check our policy to understand your rights to privacy"
         buttonLabel="Schedule Appointment"

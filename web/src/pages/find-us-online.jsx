@@ -106,6 +106,7 @@ const FindUsOnlinePage = () => {
       </SEO>
       <HeaderPage
         imgHeroBg={imgHeroBg}
+        altText="Lawn mowing and lawn care from one of our landscapers"
         headerText="Find Us Online"
         subheaderText="Find out more about us by visiting our social media accounts"
         buttonLabel="Schedule Appointment"

@@ -5,7 +5,14 @@ import { useInView } from 'react-intersection-observer';
 
 import Button from '../common/Button';
 
-const HeroPage = ({ imgHeroBg, altText, headerText, subheaderText }) => {
+const HeroPage = ({
+  imgHeroBg,
+  altText,
+  headerText,
+  subheaderText,
+  btnLabel,
+  btnLink,
+}) => {
   const variants = {
     hidden: { opacity: 0, scale: 0.8, x: -100 },
     visible: { opacity: 1, scale: 1, x: 0 },
@@ -75,7 +82,7 @@ const HeroPage = ({ imgHeroBg, altText, headerText, subheaderText }) => {
           className="flex mt-10"
         >
           <div className="col-1 gap-4 mx-auto">
-            <Button type="internal" />
+            <Button type="internal" btnLabel={btnLabel} btnLink={btnLink} />
           </div>
         </motion.div>
       </motion.div>

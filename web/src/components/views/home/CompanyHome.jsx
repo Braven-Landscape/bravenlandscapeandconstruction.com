@@ -25,7 +25,7 @@ const CompanyHome = () => {
       }
       imgCompany: file(
         relativePath: {
-          eq: "assets/images/home/landscaping-contractor-brick-walkway-braven-landscape-construction-plympton-ma.jpg"
+          eq: "assets/images/home/henrique-almeida-braven-landscape-construction-plympton-ma.jpg"
         }
       ) {
         childImageSharp {

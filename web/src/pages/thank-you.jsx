@@ -6,9 +6,9 @@ import SEO from '../components/common/Seo';
 import HeaderPage from '../components/layouts/HeroPage';
 import Container from '../components/layouts/Container';
 
-const PageMissingPage = () => {
+const ThankYouPage = () => {
   const data = useStaticQuery(graphql`
-    query PageMissingPageQ {
+    query ThankYouPageQ {
       site {
         siteMetadata {
           company
@@ -65,8 +65,8 @@ const PageMissingPage = () => {
   const imgHeroBg = data.imgHeroBg.childImageSharp.gatsbyImageData;
 
   const seo = {
-    title: 'Something Went Wrong! This Page is Missing - 404 Error',
-    description: `This page appears to be missing! Try visiting our home or services page for more information about ${company.name}`,
+    title: 'Thank You! We Will Contact You Shortly!',
+    description: `Thank you for reach out to ${company.name}! We will be contacting you shortly.`,
     slug: 'https://bravenlandscapeconstruction.com/404/',
   };
 
@@ -106,41 +106,30 @@ const PageMissingPage = () => {
       </SEO>
       <HeaderPage
         imgHeroBg={imgHeroBg}
-        altText="Wheelbarrow with a bucket from front yard landscaping."
-        headerText="Something Went Wrong!"
-        subheaderText="This page is missing! We call this a 404 error"
-        buttonLabel="Schedule Appointment"
+        headerText="Thank You!"
+        subheaderText="We will be contacting you shortly."
+        btnLabel="Return Home"
+        btnLink="/"
       />
       <Container type="sm">
-        <div className="py-24 lg:max-w-3xl mx-auto">
-          <div className="text-center py-5 space-y-3">
-            <h2 className="text-normal text-gray-500 uppercase break-normal">
-              {company.name}
-            </h2>
-            <h3 className="text-primary font-bold break-normal text-4xl capitalize">
-              Let's see if we can help
-            </h3>
-          </div>
-          <p className="py-5 text-xl text-center">
-            The page you are trying to visit does not exist. Check for a typo in
-            the URL.
-          </p>
-          <h3 className="py-5 font-bold">Try these links:</h3>
-          <div className="max-w-3xl">
-            <ul className="list-disc list-inside">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/services/">Services</Link>
-              </li>
-              <li>
-                <Link to="/about/">About Us</Link>
-              </li>
-              <li>
-                <Link to="/contact/">Contact Us</Link>
-              </li>
-            </ul>
+        <div className="py-24 lg:max-w-4xl mx-auto">
+          <div className="bg-yellow-50 border border-primary rounded-xl shadow-xl p-5 lg:p-10">
+            <div className="text-center py-5 space-y-3">
+              <h2 className="text-normal text-gray-500 uppercase break-normal">
+                {company.name}
+              </h2>
+              <h3 className="text-primary font-bold break-normal text-4xl capitalize">
+                We Look Forward to Working With You
+              </h3>
+            </div>
+            <p className="py-5 text-xl text-center">
+              We appreciate your interest in our services. We will get back to
+              you as soon as we can to discuss your next project. In the
+              meantime, please check out the rest of our website for more
+              information on our company and our services.
+            </p>
+            <p className="pt-5 text-xl text-right font-semibold">Thanks,</p>
+            <p className="pb-5 text-xl text-right italic">Henrique Almeida</p>
           </div>
         </div>
       </Container>
@@ -148,4 +137,4 @@ const PageMissingPage = () => {
   );
 };
 
-export default PageMissingPage;
+export default ThankYouPage;

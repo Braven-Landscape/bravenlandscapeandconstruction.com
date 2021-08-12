@@ -269,6 +269,7 @@ const ServicesPage = () => {
       </SEO>
       <HeroPage
         imgHeroBg={imgHeroBg}
+        altText="Front yard of a home after professional landscapers from Braven Landscape & Construction mowed and edged."
         headerText="Landscaping, Hardscape, Masonry & Construction Services"
         subheaderText="Check our landscaping & hardscaping construction services for residential homes & commercial businesses"
       />

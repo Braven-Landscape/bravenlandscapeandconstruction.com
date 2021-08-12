@@ -127,6 +127,7 @@ const ContactPage = () => {
       </SEO>
       <HeaderPage
         imgHeroBg={imgHeroBg}
+        altText="Riding Lawn mowing and lawn care from one of our landscapers"
         headerText={`Contact ${company.name}`}
         subheaderText="Let's schedule a free estimate and plan your next project"
         buttonLabel="Schedule Appointment"

@@ -96,6 +96,7 @@ const FormFooter = () => {
         data-netlify-honeypot="bot-field"
         className="relative bg-primary p-10 lg:p-16 rounded-xl shadow-xl max-w-4xl mx-3 lg:mx-auto"
         id="form-footer"
+        action="/thank-you/"
       >
         <div className="space-y-6 mb-16">
           <p className="text-4xl font-bold text-accent text-center mb-1 mt-4 mt-md-0">

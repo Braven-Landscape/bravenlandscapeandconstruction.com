@@ -107,6 +107,7 @@ const AccessibilityPage = () => {
       </SEO>
       <HeaderPage
         imgHeroBg={imgHeroBg}
+        altText="Lawn mowing and lawn care from one of our landscaping experts"
         headerText="Our Website Accessibility Policy"
         subheaderText="Website ADA & WCAG compliance"
         buttonLabel="Schedule Appointment"

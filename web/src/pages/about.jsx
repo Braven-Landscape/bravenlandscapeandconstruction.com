@@ -59,7 +59,7 @@ const AboutPage = () => {
       }
       imgCompany: file(
         relativePath: {
-          eq: "assets/images/home/landscaping-contractor-brick-walkway-braven-landscape-construction-plympton-ma.jpg"
+          eq: "assets/images/about/henrique-almeida-braven-landscape-construction-plympton-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -133,6 +133,7 @@ const AboutPage = () => {
       </SEO>
       <HeaderPage
         imgHeroBg={imgHeroBg}
+        altText="Learn more about Braven Landscape & Construction and the business owner Henrique Almeida"
         headerText={`About ${company.name}`}
         subheaderText="Meet the team and learn about who we are"
         buttonLabel="Schedule Appointment"
@@ -172,7 +173,7 @@ const AboutPage = () => {
                     image={imgCompany}
                     className="rounded-2xl shadow-xl w-full h-96 sm:h-full"
                     imgClassName="rounded-2xl shadow-xl"
-                    alt="Company"
+                    alt="Henrique Almeida, the owner of Braven Landscape & Construction, working on a walkway."
                     loading="lazy"
                   />
                 </div>
