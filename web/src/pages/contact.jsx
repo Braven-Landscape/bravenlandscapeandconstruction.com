@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 import Layout from '../components/layout';
 import SEO from '../components/common/Seo';
-import HeaderPage from '../components/layouts/HeroPage';
+import HeroContact from '../components/layouts/HeroContact';
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
@@ -125,12 +125,14 @@ const ContactPage = () => {
           }`}
         </script>
       </SEO>
-      <HeaderPage
+      <HeroContact
         imgHeroBg={imgHeroBg}
         altText="Riding Lawn mowing and lawn care from one of our landscapers"
         headerText={`Contact ${company.name}`}
-        subheaderText="Let's schedule a free estimate and plan your next project"
-        buttonLabel="Schedule Appointment"
+        subheaderTextOne="Let's schedule a free estimate and plan your next project"
+        subheaderTextTwo="Call us now or fill out or form below"
+        btnLabel="Call Us Now"
+        btnLink={company.phoneHref}
       />
       <div className="bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
