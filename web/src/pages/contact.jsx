@@ -130,7 +130,7 @@ const ContactPage = () => {
         altText="Riding Lawn mowing and lawn care from one of our landscapers"
         headerText={`Contact ${company.name}`}
         subheaderTextOne="Let's schedule a free estimate and plan your next project"
-        subheaderTextTwo="Call us now or fill out or form below"
+        subheaderTextTwo="Call us now or fill out our form below"
         btnLabel="Call Us Now"
         btnLink={company.phoneHref}
       />
