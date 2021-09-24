@@ -75,6 +75,16 @@ const SEO = ({ lang, title, description, canonical, image, children }) => {
 
       {/* <script type="application/ld+json">{structuredDataLocalBusiness}</script> */}
       {children}
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-326961502"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-326961502');
+</script>
     </Helmet>
   );
 };
