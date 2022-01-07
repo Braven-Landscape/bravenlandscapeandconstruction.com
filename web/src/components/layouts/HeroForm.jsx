@@ -111,7 +111,7 @@ const HeroForm = ({
             </div>
           </motion.div> */}
         </Flex>
-        <Flex classes="flex-col justify-center relative mx-auto lg:max-w-lg mt-10 lg:mt-0">
+        <Flex classes="flex-col justify-center relative mx-auto lg:max-w-lg my-10 lg:my-0">
           <div className="overflow-hidden">
             <FormHero formName="form-hero" />
           </div>
