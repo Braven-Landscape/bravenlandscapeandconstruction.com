@@ -178,6 +178,9 @@ const FormFooter = () => {
               <option value="Seasonal: Spring/Fall Clean Up">
                 Seasonal: Spring/Fall Clean Up
               </option>
+              <option value="Seasonal: Snow Removal" className="bg-gray-100">
+                Seasonal: Snow Removal
+              </option>
             </select>
           </div>
           <div>
@@ -215,7 +218,7 @@ const FormFooter = () => {
             rows="3"
             value={message}
             onChange={handleChange}
-            placeholder="Message"
+            placeholder="Please leave a detailed message..."
             required
             className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
           />
@@ -236,7 +239,7 @@ const FormFooter = () => {
             type="submit"
             value="Submit"
           >
-            <span>Submit Inquiry</span>
+            <span className="drop-shadow-text">Submit Inquiry</span>
           </button>
         </div>
       </motion.form>

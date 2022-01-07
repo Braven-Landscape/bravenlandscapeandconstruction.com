@@ -115,9 +115,9 @@ const NavbarMain = () => {
                 </div>
                 <div className="hidden sm:block sm:ml-6 lg:mx-auto self-center">
                   <div className="flex space-x-6">
-                    {navLinksDesktop.map((item) => (
+                    {navLinksDesktop.map((item, index) => (
                       <Link
-                        key={item.name}
+                        key={index}
                         to={item.to}
                         className={dryClasses.navItem}
                         activeClassName={dryClasses.activeNavItem}
@@ -144,8 +144,8 @@ const NavbarMain = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="flex flex-col lg:flex-row px-2 pt-2 pb-3 space-y-1">
               <div className="mb-6">
-                {navLinksMobile.map((item) => (
-                  <div className="text-center">
+                {navLinksMobile.map((item, index) => (
+                  <div key={index} className="text-center">
                     <Link
                       key={item.name}
                       to={item.to}
