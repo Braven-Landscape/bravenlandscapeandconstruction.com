@@ -19,11 +19,11 @@ const FormFooter = () => {
     email: '',
     phone: '',
     service: '',
-    findUs: '',
+    location: '',
     message: '',
   });
 
-  const { firstName, lastName, email, phone, service, findUs, message } =
+  const { firstName, lastName, email, phone, service, location, message } =
     contact;
 
   const handleChange = (e) =>
@@ -184,32 +184,15 @@ const FormFooter = () => {
             </select>
           </div>
           <div>
-            <select
-              name="findUs"
-              as="select"
-              value={findUs}
+            <input
+              name="location"
+              type="text"
+              value={location}
               onChange={handleChange}
+              placeholder="Location"
               required
               className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
-            >
-              <option value="" disabled hidden>
-                How Did You Find Us?
-              </option>
-              <option value="Facebook" className="bg-gray-100">
-                Facebook
-              </option>
-              <option value="Family/Friend">Family/Friend</option>
-              <option value="Google/Bing" className="bg-gray-100">
-                Google/Bing
-              </option>
-              <option value="Referral">Referral</option>
-              <option
-                value="Website (Yellowpages, etc.)"
-                className="bg-gray-100"
-              >
-                Directory (Yellowpages, etc.)
-              </option>
-            </select>
+            />
           </div>
         </div>
         <div className="mt-6">
