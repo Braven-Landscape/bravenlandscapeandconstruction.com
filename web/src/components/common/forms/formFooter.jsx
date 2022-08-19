@@ -19,11 +19,11 @@ const FormFooter = () => {
     email: '',
     phone: '',
     service: '',
-    location: '',
+    address: '',
     message: '',
   });
 
-  const { firstName, lastName, email, phone, service, location, message } =
+  const { firstName, lastName, email, phone, service, address, message } =
     contact;
 
   const handleChange = (e) =>
@@ -185,11 +185,11 @@ const FormFooter = () => {
           </div>
           <div>
             <input
-              name="location"
+              name="address"
               type="text"
-              value={location}
+              value={address}
               onChange={handleChange}
-              placeholder="Location"
+              placeholder="Physical Address"
               required
               className="shadow-sm focus:ring-primary focus:border-accent block w-full sm:text-sm border-gray-300 rounded-md"
             />
