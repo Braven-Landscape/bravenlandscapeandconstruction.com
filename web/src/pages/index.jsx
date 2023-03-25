@@ -11,7 +11,7 @@ import CtaHome from '../components/views/home/CtaHome';
 import ServiceOneHome from '../components/views/home/ServiceOneHome';
 import ServiceTwoHome from '../components/views/home/ServiceTwoHome';
 import CtaServiceOneHome from '../components/views/home/CtaServiceOneHome';
-import CtaServiceTwoHome from '../components/views/home/CtaServiceTwoHome';
+// import CtaServiceTwoHome from '../components/views/home/CtaServiceTwoHome';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
