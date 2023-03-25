@@ -66,7 +66,7 @@ const HeroHome = () => {
 
   return (
     //  <!-- This example requires Tailwind CSS v2.0+ -->
-    <div className="relative max-h-screen">
+    <div className="relative lg:max-h-screen">
       <div className="absolute inset-0">
         <GatsbyImage
           image={imgHeroBg}
@@ -79,42 +79,65 @@ const HeroHome = () => {
           aria-hidden="true"
         />
       </div>
-      <div className="relative max-w-4xl mx-auto text-center py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <motion.h1
-          ref={ref}
-          variants={variants}
-          initial="hidden"
-          animate={controls}
-          transition={{ duration: 0.5, delay: 0 }}
-          className="text-4xl font-extrabold tracking-tight text-heroHeadline sm:text-5xl lg:text-6xl drop-shadow-darker capitalize"
-        >
-          {content.headline}
-        </motion.h1>
-        <motion.p
-          ref={ref}
-          variants={variants}
-          initial="hidden"
-          animate={controls}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 text-xl sm:text-2xl lg:text-3xl font-semibold text-white max-w-3xl mx-auto drop-shadow-darker"
-        >
-          {company.name} {content.subHeadline}
-        </motion.p>
+      <div className="relative max-w-7xl mx-auto text-center py-24 px-4 sm:py-32 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12"> */}
+        <div className="text-center lg:text-left">
+          <motion.h1
+            ref={ref}
+            variants={variants}
+            initial="hidden"
+            animate={controls}
+            transition={{ duration: 0.5, delay: 0 }}
+            className="text-4xl font-extrabold tracking-tight text-heroHeadline sm:text-5xl lg:text-6xl drop-shadow-darker capitalize"
+          >
+            {content.headline}
+          </motion.h1>
+          <motion.p
+            ref={ref}
+            variants={variants}
+            initial="hidden"
+            animate={controls}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-10 text-xl sm:text-2xl lg:text-3xl font-semibold text-white max-w-3xl mx-auto drop-shadow-darker"
+          >
+            {company.name} {content.subHeadline}
+          </motion.p>
+          <motion.div
+            ref={ref}
+            variants={variants}
+            initial="hidden"
+            animate={controls}
+            transition={{
+              duration: 0.5,
+              delay: 0.6,
+            }}
+            className="flex mt-10"
+          >
+            <div className="col-1 gap-4 mx-auto lg:mx-0">
+              <Button type="internal" idName="ctaHeroHomeBtn" />
+            </div>
+          </motion.div>
+        </div>
         <motion.div
           ref={ref}
           variants={variants}
           initial="hidden"
           animate={controls}
-          transition={{
-            duration: 0.5,
-            delay: 0.6,
-          }}
-          className="flex mt-10"
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-10 lg:mt-0 mx-auto w-full h-full drop-shadow-darker"
         >
-          <div className="col-1 gap-4 mx-auto">
-            <Button type="internal" idName="ctaHeroHomeBtn" />
-          </div>
+          <iframe
+            // width="100%"
+            // height="315"
+            src="https://www.youtube.com/embed/_8MySYa7KMg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            className="w-full h-full"
+          ></iframe>
         </motion.div>
+        {/* </div> */}
       </div>
     </div>
   );
