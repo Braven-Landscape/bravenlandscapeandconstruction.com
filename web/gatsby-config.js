@@ -36,7 +36,7 @@ module.exports = {
     gmbCID: `https://www.google.com/maps?cid=13760398526388246013`,
     gmbURL: `https://www.google.com/maps?cid=13760398526388246013`,
     gmbEmbedSrc: `https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11862.165932860273!2d-70.807675!3d41.9886533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbef6c18dd52e15fd!2sAngels%20Towing%20-%20Junk%20Car%20Mass!5e0!3m2!1sen!2sus!4v1621527104729!5m2!1sen!2sus`,
-    facebookURL: `https://facebook.com`,
+    facebookURL: `https://www.facebook.com/braven.landscape`,
     instagramURL: `https://instagram.com`,
     twitterURL: `https://twitter.com`,
     youTubeURL: `https://youtube.com`,
