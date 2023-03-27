@@ -9,5 +9,6 @@
   "seo-tools": "564f33b8f2360b079d7c71dac71fb0e4efbad16ec97f1042b9cabc58c7da8533",
   "content-calendar": "77266b09d4f59715778bc5fd507aefc59e2c6269ab885d7451ad680a20bb651f",
   "sanity-plugin-netlify-deploy-status-badge": "f4302d53933615325853c58a226af2f9206d055688e932cb636a4ace2e8b85c4",
-  "netlify-deploy-status-badge": "f4302d53933615325853c58a226af2f9206d055688e932cb636a4ace2e8b85c4"
+  "netlify-deploy-status-badge": "f4302d53933615325853c58a226af2f9206d055688e932cb636a4ace2e8b85c4",
+  "@sanity/vision": "da5b6ed712703ecd04bf4df560570c668aa95252c6bc1c41d6df1bda9b8b8f60"
 }
