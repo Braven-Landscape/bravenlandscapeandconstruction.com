@@ -18,7 +18,7 @@ const content = {
     'is a team of professional landscape designers & lawn care experts.',
 };
 
-const HeroHome = () => {
+function HeroHome() {
   const data = useStaticQuery(graphql`
     query HeroHomeQ {
       site {
@@ -88,7 +88,7 @@ const HeroHome = () => {
             initial="hidden"
             animate={controls}
             transition={{ duration: 0.5, delay: 0 }}
-            className="text-4xl font-extrabold tracking-tight text-heroHeadline sm:text-5xl lg:text-6xl drop-shadow-darker capitalize"
+            className="text-4xl font-extrabold tracking-tight text-heroHeadline sm:text-5xl lg:text-6xl drop-shadow-darker capitalize justify-start"
           >
             {content.headline}
           </motion.h1>
@@ -131,16 +131,16 @@ const HeroHome = () => {
             // height="315"
             src="https://www.youtube.com/embed/_8MySYa7KMg"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             className="w-full h-full"
-          ></iframe>
+          />
         </motion.div>
         {/* </div> */}
       </div>
     </div>
   );
-};
+}
 
 export default HeroHome;
