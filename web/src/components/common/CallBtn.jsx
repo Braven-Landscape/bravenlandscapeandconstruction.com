@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-const CallBtn = () => {
+const CallBtn = ({ phone }) => {
   const data = useStaticQuery(graphql`
     query CallBtnQ {
       sanitySettingsCompany {
@@ -14,7 +14,7 @@ const CallBtn = () => {
 
   return (
     <a
-      href={company.phoneHref}
+      href={`tel:${phone}`}
       id="ctaMobileCallBtn"
       className="block lg:hidden fixed bottom-2 right-2 z-50 drop-shadow-dark fa-stack fa-2x"
     >

@@ -21,14 +21,16 @@ const settings = {
 };
 
 const navLinksDesktop = [
-  { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
-  { name: 'Landscaping & Construction Services', to: '/services/' },
+  { name: 'Plympton Office', to: '/' },
+  { name: 'East Bridgewater Office', to: '/east-bridgewater-ma/' },
+  { name: 'Our Services', to: '/services/' },
 ];
 
 const navLinksMobile = [
-  { name: 'Home', to: '/' },
   { name: 'About Us', to: '/about/' },
+  { name: 'Plympton Office', to: '/' },
+  { name: 'East Bridgewater Office', to: '/east-bridgewater-ma/' },
   { name: 'Services', to: '/services/' },
   { name: 'Contact Us', to: '/contact/' },
 ];
