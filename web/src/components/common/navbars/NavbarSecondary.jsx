@@ -9,7 +9,15 @@ const settings = {
   textWeight: 'font-thin',
 };
 
-const NavbarSecondary = () => {
+const NavbarSecondary = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const data = useStaticQuery(graphql`
     query NavbarSecondaryQ {
       sanitySettingsCompany {
@@ -71,14 +79,14 @@ const NavbarSecondary = () => {
               <span
                 className={`${settings.textColor} ${settings.textColorHover} ${settings.textSize} ${settings.textWeight}`}
               >
-                {company.address}
+                {street}, {city}, {stateAbbr} {zip}
               </span>
             </a>
           </div>
 
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             <a
-              href={company.phoneHref}
+              href={`tel:${phone}`}
               target="_blank"
               rel="noreferrer noopener"
               id="ctaDesktopNavPhone"
@@ -87,7 +95,7 @@ const NavbarSecondary = () => {
               <span
                 className={`${settings.textColor} ${settings.textColorHover} ${settings.textSize} ${settings.textWeight}`}
               >
-                {company.phone}
+                {phone}
               </span>
             </a>
           </div>

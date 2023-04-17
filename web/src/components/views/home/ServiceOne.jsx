@@ -6,9 +6,17 @@ import { useInView } from 'react-intersection-observer';
 
 import Button from '../../common/Button';
 
-const ServiceOneHome = () => {
+const ServiceOne = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const data = useStaticQuery(graphql`
-    query ServiceOneHomeQ {
+    query ServiceOneQ {
       sanitySettingsCompany {
         phone
         phoneHref
@@ -93,7 +101,7 @@ const ServiceOneHome = () => {
                   Landscaping For Residential Homes & Commercial Businesses
                 </h3>
                 <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-primary sm:text-5xl">
-                  Landscaping & Lawn Care Services
+                  Landscaping & Lawn Care Services in {city}, {stateAbbr} {zip}
                 </h2>
               </motion.div>
               <p className="pt-4">
@@ -133,9 +141,9 @@ const ServiceOneHome = () => {
               </p>
               <p className="text-2xl py-5">
                 Call today for more information:{' '}
-                <a href={company.phoneHref} className="no-underline">
+                <a href={`tel:${phone}`} className="no-underline">
                   <span className="text-yellow-500 hover:text-yellow-300 font-bold">
-                    {company.phone}
+                    {phone}
                   </span>
                 </a>
               </p>
@@ -154,4 +162,4 @@ const ServiceOneHome = () => {
   );
 };
 
-export default ServiceOneHome;
+export default ServiceOne;

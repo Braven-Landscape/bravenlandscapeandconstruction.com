@@ -6,21 +6,9 @@ import { useInView } from 'react-intersection-observer';
 
 import Button from '../../common/Button';
 
-const heroSettings = {
-  bgOverlay: 'bg-gray-500',
-  bgImgAlt:
-    'The front yard of a home with a porch and garden. Landscaping was done by Braven Landscape & Construction in Plympton, MA.',
-};
-
-const content = {
-  headline: 'Landscaping, Hardscape, Masonry & Construction in Massachusetts',
-  subHeadline:
-    'is a team of professional landscape designers & lawn care experts.',
-};
-
-function HeroHome() {
+function Hero({ street, city, stateAbbr, stateFull, zip, mapUrl, phone }) {
   const data = useStaticQuery(graphql`
-    query HeroHomeQ {
+    query HeroQ {
       site {
         siteMetadata {
           primaryColorLight
@@ -64,6 +52,16 @@ function HeroHome() {
     }
   }, [controls, inView]);
 
+  const heroSettings = {
+    bgOverlay: 'bg-gray-500',
+    bgImgAlt: `The front yard of a home with a porch and garden. Landscaping was done by Braven Landscape & Construction in ${city}, ${stateAbbr} ${zip}.`,
+  };
+
+  const content = {
+    headline: `${city}, ${stateAbbr} Landscaping, Hardscaping, Masonry & Construction`,
+    subHeadline: `is a team of professional landscape designers & lawn care experts located in ${city}, ${stateAbbr} ${zip}. Call today for your free quote!`,
+  };
+
   return (
     //  <!-- This example requires Tailwind CSS v2.0+ -->
     <div className="relative lg:max-h-screen">
@@ -79,7 +77,7 @@ function HeroHome() {
           aria-hidden="true"
         />
       </div>
-      <div className="relative max-w-7xl mx-auto text-center py-24 px-4 sm:py-32 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="relative max-w-7xl mx-auto text-center py-24 px-4 sm:py-32 sm:px-6 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12"> */}
         <div className="text-center lg:text-left">
           <motion.h1
@@ -88,7 +86,7 @@ function HeroHome() {
             initial="hidden"
             animate={controls}
             transition={{ duration: 0.5, delay: 0 }}
-            className="text-4xl font-extrabold tracking-tight text-heroHeadline sm:text-5xl lg:text-6xl drop-shadow-darker capitalize justify-start"
+            className="text-4xl font-extrabold tracking-tight text-heroHeadline sm:text-5xl lg:text-5xl drop-shadow-darker capitalize justify-start"
           >
             {content.headline}
           </motion.h1>
@@ -114,7 +112,7 @@ function HeroHome() {
             className="flex mt-10"
           >
             <div className="col-1 gap-4 mx-auto lg:mx-0">
-              <Button type="internal" idName="ctaHeroHomeBtn" />
+              <Button type="internal" idName="ctaHeroBtn" />
             </div>
           </motion.div>
         </div>
@@ -143,4 +141,4 @@ function HeroHome() {
   );
 }
 
-export default HeroHome;
+export default Hero;

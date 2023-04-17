@@ -5,9 +5,17 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const FeaturesHome = () => {
+const Features = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const data = useStaticQuery(graphql`
-    query FeaturesHomeQ {
+    query FeaturesQ {
       imgFeatureOne: file(
         relativePath: {
           eq: "assets/images/home/features-gardening-braven-landscape-construction-plympton-ma.jpg"
@@ -122,7 +130,7 @@ const FeaturesHome = () => {
           Landscaping, Hardscaping, Masonry, Construction
         </h3>
         <h2 className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl sm:max-w-3xl mx-auto">
-          Landscaping & Hardscaping Services in Massachusetts
+          Landscaping & Hardscaping Services in {city}, {stateAbbr}
         </h2>
         <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
           We offer a variety of landscaping & construction services. Our
@@ -173,4 +181,4 @@ const FeaturesHome = () => {
   );
 };
 
-export default FeaturesHome;
+export default Features;

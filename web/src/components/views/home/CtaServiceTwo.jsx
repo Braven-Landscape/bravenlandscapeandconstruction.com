@@ -9,7 +9,7 @@ import Button from '../../common/Button';
 const heroSettings = {
   bgOverlay: 'bg-gray-500',
   bgImgAlt:
-    'Front yard of home with walkway and patio, landscaping done by Braven Landscape & Construction in Plympton, MA',
+    'Front yard of home with porch and garden, landscaping done by Braven Landscape & Construction in Plympton, MA',
 };
 
 const content = {
@@ -17,9 +17,9 @@ const content = {
   subHeadline: 'Give us a call at',
 };
 
-const CtaServiceOneHome = () => {
+const CtaServiceTwo = () => {
   const data = useStaticQuery(graphql`
-    query CtaServiceOneHomeQ {
+    query CtaServiceTwoQ {
       site {
         siteMetadata {
           primaryColorLight
@@ -33,7 +33,7 @@ const CtaServiceOneHome = () => {
       }
       imgHeroBg: file(
         relativePath: {
-          eq: "assets/images/home/lawn-care-mowing-braven-landscape-construction-plympton-ma.jpg"
+          eq: "assets/images/home/outdoor-patio-walkway-hardscape-braven-landscape-construction-plympton-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -128,4 +128,4 @@ const CtaServiceOneHome = () => {
   );
 };
 
-export default CtaServiceOneHome;
+export default CtaServiceTwo;

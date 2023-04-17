@@ -6,9 +6,9 @@ import { useInView } from 'react-intersection-observer';
 
 import Button from '../../common/Button';
 
-const CtaHome = () => {
+const Cta = ({ street, city, stateAbbr, stateFull, zip, mapUrl, phone }) => {
   const data = useStaticQuery(graphql`
-    query CtaHomeQ {
+    query CtaQ {
       sanitySettingsCompany {
         email
         emailHref
@@ -92,17 +92,17 @@ const CtaHome = () => {
           <p className="mt-3 text-lg text-gray-300">
             Can't wait? Call us at{' '}
             <a
-              href={company.phoneHref}
+              href={`tel:${phone}`}
               target="_blank"
               className="text-yellow-500 hover:text-yellow-300 font-bold"
               rel="noreferrer"
             >
-              {company.phone}
+              {phone}
             </a>
             .
           </p>
           <p className="mt-3 text-lg text-gray-300">
-            Hate contact forms? Email us at{' '}
+            Don't like contact forms? Email us at{' '}
             <a
               href={company.emailHref}
               target="_blank"
@@ -134,4 +134,4 @@ const CtaHome = () => {
   );
 };
 
-export default CtaHome;
+export default Cta;

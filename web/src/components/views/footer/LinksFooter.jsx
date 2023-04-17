@@ -12,7 +12,15 @@ const text = {
   logoSubText: 'Landscape & Construction',
 };
 
-const LinkFooter = () => {
+const LinkFooter = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const data = useStaticQuery(graphql`
     query LinkFooterQ {
       sanitySettingsCompany {
@@ -131,12 +139,12 @@ const LinkFooter = () => {
         link: '/',
       },
       {
-        label: `${company.address}`,
+        label: `${street}, ${city}, ${stateAbbr} ${zip}`,
         link: `${socials.gmbCid}`,
       },
       {
-        label: `${company.phone}`,
-        link: `${company.phoneHref}`,
+        label: `${phone}`,
+        link: `${phone}`,
       },
       {
         label: `${company.email}`,

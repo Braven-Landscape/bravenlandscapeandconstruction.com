@@ -4,7 +4,15 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const CompanyHome = () => {
+const Company = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const settings = {
     testimonialBg: 'bg-primary',
     quoteColor: 'text-accent',
@@ -12,7 +20,7 @@ const CompanyHome = () => {
   };
 
   const data = useStaticQuery(graphql`
-    query CompanyHomeQ {
+    query CompanyQ {
       site {
         siteMetadata {
           company
@@ -109,11 +117,10 @@ const CompanyHome = () => {
             <div className="mt-10 text-gray-500 space-y-6">
               <p className="text-lg">
                 {company.name} is a landscaping, lawn care, gardening,
-                hardscape, masonry, and construction company located in{' '}
-                {company.cityState}. Our landscaping contractors service
-                residential homes and commercial businesses, focusing on outdoor
-                living spaces, landscape design, lawn care, and yard
-                maintenance.
+                hardscape, masonry, and construction company located in {city},{' '}
+                {stateAbbr}. Our landscaping contractors service residential
+                homes and commercial businesses, focusing on outdoor living
+                spaces, landscape design, lawn care, and yard maintenance.
               </p>
               <h3 className="text-2xl text-gray-800 font-semibold">
                 Licensed & Insured Professionals
@@ -160,4 +167,4 @@ const CompanyHome = () => {
   );
 };
 
-export default CompanyHome;
+export default Company;

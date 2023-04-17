@@ -9,7 +9,7 @@ import Button from '../../common/Button';
 const heroSettings = {
   bgOverlay: 'bg-gray-500',
   bgImgAlt:
-    'Front yard of home with porch and garden, landscaping done by Braven Landscape & Construction in Plympton, MA',
+    'Front yard of home with walkway and patio, landscaping done by Braven Landscape & Construction in Plympton, MA',
 };
 
 const content = {
@@ -17,9 +17,17 @@ const content = {
   subHeadline: 'Give us a call at',
 };
 
-const CtaServiceTwoHome = () => {
+const CtaServiceOne = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const data = useStaticQuery(graphql`
-    query CtaServiceTwoHomeQ {
+    query CtaServiceOneQ {
       site {
         siteMetadata {
           primaryColorLight
@@ -33,7 +41,7 @@ const CtaServiceTwoHome = () => {
       }
       imgHeroBg: file(
         relativePath: {
-          eq: "assets/images/home/outdoor-patio-walkway-hardscape-braven-landscape-construction-plympton-ma.jpg"
+          eq: "assets/images/home/lawn-care-mowing-braven-landscape-construction-plympton-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -100,11 +108,8 @@ const CtaServiceTwoHome = () => {
           className="mt-5 text-3xl font-semibold text-white max-w-3xl mx-auto drop-shadow-darker"
         >
           {content.subHeadline}{' '}
-          <a
-            href={company.phoneHref}
-            className="text-accent hover:text-primary"
-          >
-            {company.phone}
+          <a href={`tel:${phone}`} className="text-accent hover:text-primary">
+            {phone}
           </a>{' '}
           or fill out our form.
         </motion.p>
@@ -119,7 +124,7 @@ const CtaServiceTwoHome = () => {
           }}
           className="flex mt-10"
         >
-          <div className="col-1 gap-4 mx-auto">
+          <div className="mx-auto text-center">
             <Button type="internal" />
           </div>
         </motion.div>
@@ -128,4 +133,4 @@ const CtaServiceTwoHome = () => {
   );
 };
 
-export default CtaServiceTwoHome;
+export default CtaServiceOne;

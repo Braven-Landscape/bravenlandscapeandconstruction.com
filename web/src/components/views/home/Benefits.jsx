@@ -9,7 +9,15 @@ import StopwatchIcon from '../../../assets/graphics/stopwatch.svg';
 import BadgeIcon from '../../../assets/graphics/badge.svg';
 import EstateIcon from '../../../assets/graphics/estate.svg';
 
-const BenefitsHome = () => {
+const Benefits = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  phone,
+}) => {
   const benefits = [
     {
       name: 'Fast & Efficient',
@@ -61,7 +69,7 @@ const BenefitsHome = () => {
         className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
       >
         <h3 className="text-normal font-semibold tracking-wider text-primary uppercase">
-          You deserve the best lawn in the neighborhood
+          You deserve the best lawn in {city}, {stateAbbr}
         </h3>
         <h2 className="mt-2 capitalize text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
           Let us handle all the hard work
@@ -138,4 +146,4 @@ const BenefitsHome = () => {
   );
 };
 
-export default BenefitsHome;
+export default Benefits;

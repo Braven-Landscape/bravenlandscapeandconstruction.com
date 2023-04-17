@@ -114,7 +114,20 @@ const text = {
   logoSubText: 'Landscape & Construction',
 };
 
-const Footer = () => {
+const Footer = ({
+  street,
+  city,
+  stateAbbr,
+  stateFull,
+  zip,
+  mapUrl,
+  mapEmbed,
+  phone,
+  direction1,
+  direction2,
+  direction3,
+  direction4,
+}) => {
   const data = useStaticQuery(graphql`
     query FooterQ {
       logo: file(
@@ -137,8 +150,29 @@ const Footer = () => {
         Footer
       </h2>
       <FormFooter />
-      <MapFooter />
-      <LinksFooter />
+      <MapFooter
+        street={street}
+        city={city}
+        stateAbbr={stateAbbr}
+        stateFull={stateFull}
+        zip={zip}
+        mapUrl={mapUrl}
+        mapEmbed={mapEmbed}
+        phone={phone}
+        direction1={direction1}
+        direction2={direction2}
+        direction3={direction3}
+        direction4={direction4}
+      />
+      <LinksFooter
+        street={street}
+        city={city}
+        stateAbbr={stateAbbr}
+        stateFull={stateFull}
+        zip={zip}
+        mapUrl={mapUrl}
+        phone={phone}
+      />
       <TermsFooter />
     </footer>
   );
