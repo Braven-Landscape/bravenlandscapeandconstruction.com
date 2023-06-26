@@ -165,8 +165,11 @@ const FormFooter = () => {
               <option value="" disabled hidden>
                 Service of Interest...
               </option>
-              <option value="Landscaping: Lawn Care, Mowing, Mulching, etc.">
-                Landscaping: Lawn Care, Mowing, Mulching, etc.
+              <option value="Landscaping: General Lawn Care">
+                Landscaping: Lawn Care, Mowing, Trimming
+              </option>
+              <option value="Landscaping: Scheduled Lawn Mowing">
+                Landscaping: Mulching
               </option>
               <option value="Hardscaping: Patio" className="bg-gray-100">
                 Hardscaping: Patio
