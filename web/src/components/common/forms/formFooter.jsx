@@ -165,10 +165,10 @@ const FormFooter = () => {
               <option value="" disabled hidden>
                 Service of Interest...
               </option>
-              <option value="Landscaping: General Lawn Care">
+              <option value="Landscaping: Lawn Care, Mowing, Trimming">
                 Landscaping: Lawn Care, Mowing, Trimming
               </option>
-              <option value="Landscaping: Scheduled Lawn Mowing">
+              <option value="Landscaping: Mulching">
                 Landscaping: Mulching
               </option>
               <option value="Hardscaping: Patio" className="bg-gray-100">
@@ -176,7 +176,7 @@ const FormFooter = () => {
               </option>
               <option value="Hardscaping: Walkway">Hardscaping: Walkway</option>
               <option value="Construction: Fences" className="bg-gray-100">
-                Construction: Fencing
+                Construction: Fences
               </option>
               <option value="Seasonal: Spring/Fall Clean Up">
                 Seasonal: Spring/Fall Clean Up
